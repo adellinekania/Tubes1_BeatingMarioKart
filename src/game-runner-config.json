@@ -1,7 +1,7 @@
 {
   "round-state-output-location": "./match-logs",
   "game-config-file-location": "game-config.json",
-  "game-engine-jar": "123.jar",
+  "game-engine-jar": "Tubes1_BeatingMarioKart.jar",
   "verbose-mode": true,
   "max-runtime-ms": 1000,
   "player-a": "./reference-bot/java",
