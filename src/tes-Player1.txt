@@ -1,0 +1,2885 @@
+
+D:\IF Semester 4\Strategi Algoritma\Tubes 1\starter-pack>chcp 65001 
+Active code page: 65001
+
+D:\IF Semester 4\Strategi Algoritma\Tubes 1\starter-pack>java -Dfile.encoding=UTF-8 -jar ./game-runner-jar-with-dependencies.jar 
+Reading config file: ./game-runner-config.json
+No match id found. Generating one
+Building game name
+Player A id not found. Generating one
+Player B id not found. Generating one
+Match will be running with a seed of: 190
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+Instantiating local player A - CoffeeRef with bot ./reference-bot/java/target
+Instantiating local player B - CoffeeRef with bot ./reference-bot/java/target
+Starting game
+******************************************************************************************************
+******************************************************************************************************
+
+Starting round: 1
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:1
+Received command C;1;ACCELERATE
+player: id:1 position: y:1 x:1 speed:5 state:READY 
+statesThatOccurredThisRound:READY 
+boosting:false boost-counter:0 damage:0 score:0 
+powerups: 
+opponent: id:2 position: y:4 x:1 speed:5
+
+[1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░▓░░░∱░░░░░░░]
+[░░░░░░░░▓░»▓▓░░░░░░░▓]
+[2░░░░░░▓▓▓▓░░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 2
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:2
+Received command C;2;ACCELERATE
+player: id:1 position: y:1 x:7 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:0 score:0 
+powerups: 
+opponent: id:2 position: y:4 x:7 speed:6
+
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░▓░░░∱░░░░░░░░░∱░░░]
+[░░░░░░░▓░»▓▓░░░░░░░▓▓░░░░░]
+[░░░░░2▓▓▓▓░░░░░░░░#░#░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 3
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:3
+Received command C;3;ACCELERATE
+player: id:1 position: y:1 x:15 speed:8 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:0 score:0 
+powerups: 
+opponent: id:2 position: y:4 x:15 speed:3
+
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[▓░░░∱░░░░░░░░░∱░░░▓▓∱░░░░░]
+[░»▓▓░░░░░░░▓▓░░░░░░░░░░░░░]
+[▓▓░░░2░░░░#░#░░░░░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 4
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:4
+Received command C;4;ACCELERATE
+player: id:1 position: y:1 x:24 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:0 score:0 
+powerups: 
+opponent: id:2 position: y:4 x:18 speed:3
+
+[░░░░░1░░░░░░░░░░░░░░░░░»░░]
+[░░░░░∱░░░▓▓∱░░░░░░░░░░░░*░]
+[░░▓▓░░░░░░░░░░░░░░#░∱░▓▓▓▓]
+[░#░#░░░░░░░░░░░#░░░░▓▓░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 5
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:5
+Received command C;5;ACCELERATE
+player: id:1 position: y:1 x:33 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:0 score:0 
+powerups: 
+opponent: id:2 position: y:4 x:21 speed:0
+
+[░░░░░1░░░░░░░░»░░░░░░░░░░░]
+[▓▓∱░░░░░░░░░░░░*░░░░░░░░░░]
+[░░░░░░░░░#░∱░▓▓▓▓▓▓▓░░░░░░]
+[░░░░░░#░░░░▓▓░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 6
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:6
+Received command C;6;USE_BOOST
+player: id:1 position: y:1 x:42 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:0 score:4 
+powerups: BOOST:1
+opponent: id:2 position: y:4 x:21 speed:0
+
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░*░░░░░░░░░░░░░ΦΦ░░░░]
+[#░∱░▓▓▓▓▓▓▓░░░░░░░▓░∱░░░░░]
+[░░▓▓░░░░░░░░░░░░░▓░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 7
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:7
+Received command C;7;ACCELERATE
+player: id:1 position: y:1 x:57 speed:15 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:0 score:8 
+powerups: 
+opponent: id:2 position: y:4 x:24 speed:0
+
+[░░░░░1░░░░░░░░░░░░░░░»░░T░]
+[░░░░░ΦΦ░░░░░░░░░Φ░░░░░░░Φ░]
+[░░░▓░∱░░░░░░░▓░░░░░░░░░░»░]
+[░░▓░░░░░░#░∱░▓░░░░T░░░░»░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 8
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:8
+Received command C;8;ACCELERATE
+player: id:1 position: y:1 x:72 speed:15 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:4 damage:0 score:8 
+powerups: 
+opponent: id:2 position: y:4 x:24 speed:0
+
+[░░░░░1»░░T░░░░░░░░░░░░░░░░]
+[░Φ░░░░░░░Φ░░░░Φ░░▓░░░░▓░░░]
+[░░░░░░░░░»░░░░»░░*▓░▓▓T░░░]
+[░░░T░░░░»░░░░░#░░░▓▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 9
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:9
+Received command C;9;USE_BOOST
+player: id:1 position: y:1 x:87 speed:15 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:3 damage:0 score:16 
+powerups: BOOST:1, TWEET:1
+opponent: id:2 position: y:4 x:27 speed:3
+
+[░░░░░1░░░░░░*░░░░░░░░░░*░░]
+[░░▓░░░░▓░░░░░░░░Φ░░#░░░░░░]
+[░░*▓░▓▓T░░░░░░░▓░∱░░░░░░░░]
+[░░░▓▓░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 10
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:10
+Received command C;10;ACCELERATE
+player: id:1 position: y:1 x:102 speed:15 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:0 score:24 
+powerups: EMP:1, TWEET:1
+opponent: id:2 position: y:4 x:33 speed:6
+
+[░░░░░1░░*░░░░░░░░░░░░▓░░░░]
+[░Φ░░#░░░░░░░░░░░░░Φ░░░░░░░]
+[▓░∱░░░░░░░░T░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 11
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:11
+Received command C;11;ACCELERATE
+player: id:1 position: y:1 x:117 speed:15 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:4 damage:0 score:28 
+powerups: EMP:2, TWEET:1
+opponent: id:2 position: y:4 x:39 speed:0
+
+[░░░░░1▓░░░░░░░░░░░░░░░░░░░]
+[░░░Φ░░░░░░░░░░░░░*░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░Φ░*░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 12
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:12
+Received command C;12;USE_EMP
+player: id:1 position: y:1 x:132 speed:9 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:1 score:25 
+powerups: EMP:2, TWEET:1
+opponent: id:2 position: y:4 x:39 speed:0
+
+[░░░░░1░░░░░∱░Φ░░░░░░░░░░░░]
+[░░*░░░░░░░░░░▓░░░░░░#▓░░░░]
+[░░░░░░Φ░*░░░░▓▓▓▓▓░░░░░▓░T]
+[░░░░░░░░░░░▓▓░░▓▓Φ░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 13
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:13
+Received command C;13;USE_OIL
+player: id:1 position: y:1 x:141 speed:9 state:USED_EMP 
+statesThatOccurredThisRound:USED_EMP 
+boosting:false boost-counter:0 damage:1 score:37 
+powerups: OIL:1, LIZARD:1, EMP:1, TWEET:1
+opponent: id:2 position: y:4 x:42 speed:3
+
+[░░∱░Φ1░░░░░░░░░░░░░░░░░░░░]
+[░░░░▓░░░░░░#▓░░░░░░░░░░░░░]
+[░░░░▓▓▓▓▓░░░░░▓░T░░░░░░░░░]
+[░░▓▓░░▓▓Φ░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 14
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:14
+Received command C;14;USE_EMP
+player: id:1 position: y:1 x:150 speed:9 state:USED_OIL 
+statesThatOccurredThisRound:USED_OIL 
+boosting:false boost-counter:0 damage:1 score:41 
+powerups: LIZARD:1, EMP:1, TWEET:1
+opponent: id:2 position: y:4 x:45 speed:3
+
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░#▓░░░░░░░░░░░░░∱░▓░░░Φ▓▓]
+[░░░░░▓░T░░░░░░░░░░░░▓▓▓▓░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 15
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:15
+Received command C;15;ACCELERATE
+player: id:1 position: y:1 x:159 speed:9 state:USED_EMP 
+statesThatOccurredThisRound:USED_EMP 
+boosting:false boost-counter:0 damage:1 score:45 
+powerups: LIZARD:1, TWEET:1
+opponent: id:2 position: y:4 x:48 speed:3
+
+[░░░░░1░░░░░░░░░░░▓░*░░░░░░]
+[░░░░░░░░∱░▓░░░Φ▓▓░░░░░▓░░░]
+[░░░░░░░░░░░▓▓▓▓░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 16
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:16
+Received command C;16;USE_LIZARD
+player: id:1 position: y:1 x:168 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:1 score:45 
+powerups: LIZARD:1, TWEET:1
+opponent: id:2 position: y:4 x:51 speed:3
+
+[░░░░░1░░▓░*░░░░░░░*░░░░░░░]
+[░▓░░░Φ▓▓░░░░░▓░░░░░░░░░░░░]
+[░░▓▓▓▓░░░░░░░░░░░░░░Φ░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░▓*░∱]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 17
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:17
+Received command C;17;ACCELERATE
+player: id:1 position: y:1 x:177 speed:9 state:USED_LIZARD 
+statesThatOccurredThisRound:USED_LIZARD 
+boosting:false boost-counter:0 damage:1 score:45 
+powerups: TWEET:1
+opponent: id:2 position: y:4 x:54 speed:0
+
+[░*░░░1░░░*░░░░░░░░░░░░░░░░]
+[░░░░▓░░░░░░░░░░░░░░░░░░*░▓]
+[░░░░░░░░░░░Φ░░░░░T░░░░░░#░]
+[░░░░░░░░░░░░░▓*░∱░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 18
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:18
+Received command C;18;USE_EMP
+player: id:1 position: y:1 x:186 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:1 score:49 
+powerups: EMP:1, TWEET:1
+opponent: id:2 position: y:4 x:54 speed:0
+
+[*░░░░1░░░░░░░░░░░░»░░░░*T∱]
+[░░░░░░░░░░░░░░*░▓░░░░░░░░░]
+[░░Φ░░░░░T░░░░░░#░░T░░░T░░░]
+[░░░░▓*░∱░░░░░░░░░░░░░▓░░░Φ]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 19
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:19
+Received command C;19;ACCELERATE
+player: id:1 position: y:1 x:195 speed:9 state:USED_EMP 
+statesThatOccurredThisRound:USED_EMP 
+boosting:false boost-counter:0 damage:1 score:53 
+powerups: TWEET:1
+opponent: id:2 position: y:4 x:57 speed:3
+
+[░░░░░1░░░»░░░░*T∱»░░░░░░░░]
+[░░░░░*░▓░░░░░░░░░░░░░░░░#░]
+[░░░░░░#░░T░░░T░░░░░░░░░░░░]
+[░░░░░░░░░░░░▓░░░Φ░░░░░░░░T]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 20
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:20
+Received command C;20;USE_BOOST
+player: id:1 position: y:1 x:204 speed:9 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:1 score:61 
+powerups: BOOST:1, EMP:1, TWEET:1
+opponent: id:2 position: y:4 x:63 speed:0
+
+[»░░░░1T∱»░░░░░░░░░░░░░░░T░]
+[░░░░░░░░░░░░░░░#░▓░░░░░Φ░░]
+[T░░░T░░░░░░░░░░░░░▓▓░░░░░░]
+[░░░▓░░░Φ░░░░░░░░T░░▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 21
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:21
+Received command C;21;USE_BOOST
+player: id:1 position: y:1 x:213 speed:9 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:1 score:77 
+powerups: BOOST:1, LIZARD:1, EMP:1, TWEET:2
+opponent: id:2 position: y:4 x:63 speed:0
+
+[░░░░░1░░░░░░░░░T░░░░░░░░░░]
+[░░░░░░#░▓░░░░░Φ░░░»░▓▓▓░░░]
+[░░░░░░░░░▓▓░░░░░░░░░░#░░░░]
+[░░░░░░░T░░▓░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 22
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:22
+Received command C;22;USE_EMP
+player: id:1 position: y:1 x:222 speed:9 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:1 score:81 
+powerups: LIZARD:1, EMP:1, TWEET:2
+opponent: id:2 position: y:4 x:66 speed:3
+
+[░░░░░1T░░░░░░░░░░░░T░░░▓▓░]
+[░░░░░Φ░░░»░▓▓▓░░░░░░░░░░░░]
+[▓▓░░░░░░░░░░#░░░░░░░░░░░░░]
+[░▓░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 23
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:23
+Received command C;23;USE_LIZARD
+player: id:1 position: y:1 x:231 speed:9 state:USED_EMP 
+statesThatOccurredThisRound:USED_EMP 
+boosting:true boost-counter:4 damage:1 score:89 
+powerups: LIZARD:1, TWEET:3
+opponent: id:2 position: y:4 x:69 speed:3
+
+[░░░░░1░░░░T░░░▓▓░░░░░░░░▓░]
+[»░▓▓▓░░░░░░░░░░░░░░░░░»░░░]
+[░░░#░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 24
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:24
+Received command C;24;TURN_RIGHT
+player: id:1 position: y:1 x:240 speed:8 state:HIT_MUD 
+statesThatOccurredThisRound:USED_LIZARD, HIT_MUD 
+boosting:false boost-counter:0 damage:2 score:86 
+powerups: TWEET:3
+opponent: id:2 position: y:4 x:72 speed:3
+
+[░T░░░1▓░░░░░░░░▓░░░░░░░░░░]
+[░░░░░░░░░░░░░»░░░░░░░»░░░░]
+[░░░░░░░░░░░░░░░░░░░░░▓░░░░]
+[░░░░░░░░░░░░░░░░░░░░▓░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 25
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:25
+Received command C;25;ACCELERATE
+player: id:1 position: y:2 x:247 speed:8 state:TURNING_RIGHT 
+statesThatOccurredThisRound:TURNING_RIGHT 
+boosting:false boost-counter:0 damage:2 score:86 
+powerups: TWEET:3
+opponent: id:2 position: y:4 x:75 speed:3
+
+[░░░░░░░░▓░░░░░░░░░░░░░▓▓░░]
+[░░░░░1»░░░░░░░»░░░░░░░░░░░]
+[░░░░░░░░░░░░░░▓░░░░░░░░░░░]
+[░░░░░░░░░░░░░▓░░░░░░░∱░░░»]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 26
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:26
+Received command C;26;USE_BOOST
+player: id:1 position: y:2 x:255 speed:8 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:2 score:90 
+powerups: BOOST:1, TWEET:3
+opponent: id:2 position: y:4 x:78 speed:3
+
+[▓░░░░░░░░░░░░░▓▓░░░░░░░░░░]
+[░░░░░1»░░░░░░░░░░░Φ░░░░░░░]
+[░░░░░░▓░░░░░░░░░░░░░▓░░░░░]
+[░░░░░▓░░░░░░░∱░░░»░░▓░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 27
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:27
+Received command C;27;USE_BOOST
+player: id:1 position: y:2 x:263 speed:8 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:2 score:98 
+powerups: BOOST:1, TWEET:3
+opponent: id:2 position: y:4 x:81 speed:0
+
+[░░░░░░▓▓░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░Φ░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░▓░░░░░░░░░░░»░]
+[░░░░░∱░░░»░░▓░░░░░░░░░░»░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 28
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:28
+Received command C;28;ACCELERATE
+player: id:1 position: y:2 x:271 speed:8 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:2 score:106 
+powerups: OIL:1, TWEET:3
+opponent: id:2 position: y:4 x:81 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░Φ░░Φ]
+[░░Φ░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░▓░░░░░░░░░░░»░░░░░░▓▓░]
+[░»░░▓░░░░░░░░░░»░░▓░░░░▓▓Φ]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 29
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:29
+Received command C;29;ACCELERATE
+player: id:1 position: y:2 x:279 speed:8 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:4 damage:2 score:106 
+powerups: OIL:1, TWEET:3
+opponent: id:2 position: y:4 x:84 speed:3
+
+[░░░░░░░░░░░░░░Φ░░Φ░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░»░░░░░░▓▓░░░░░░░░░]
+[░░░░░░░»░░▓░░░░▓▓Φ▓▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 30
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:30
+Received command C;30;ACCELERATE
+player: id:1 position: y:2 x:287 speed:8 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:3 damage:2 score:106 
+powerups: OIL:1, TWEET:3
+opponent: id:2 position: y:4 x:90 speed:0
+
+[░░░░░░Φ░░Φ░░░░░░░░░░░░░░»░]
+[░░░░░1░░░░░░░░░░░░░░▓░░░░░]
+[»░░░░░░▓▓░░░░░░░░░░░▓░░░░░]
+[░░▓░░░░▓▓Φ▓▓░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 31
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:31
+Received command C;31;ACCELERATE
+player: id:1 position: y:2 x:295 speed:8 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:2 damage:2 score:106 
+powerups: OIL:1, TWEET:3
+opponent: id:2 position: y:4 x:90 speed:0
+
+[░Φ░░░░░░░░░░░░░░»░░░░░░░#░]
+[░░░░░1░░░░░░▓░░░░░*░░▓░░░░]
+[▓░░░░░░░░░░░▓░░░░░░░░░▓░░░]
+[▓Φ▓▓░░░░░░░░░░░░░░░░░»░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 32
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:32
+Received command C;32;ACCELERATE
+player: id:1 position: y:2 x:303 speed:6 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:3 score:103 
+powerups: OIL:1, TWEET:3
+opponent: id:2 position: y:4 x:93 speed:3
+
+[░░░░░░░░»░░░░░░░#░░░░░░░░░]
+[░░░░▓1░░░░*░░▓░░░░░░░░░░░░]
+[░░░░▓░░░░░░░░░▓░░░▓T░░░░░░]
+[░░░░░░░░░░░░░»░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 33
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:33
+Received command C;33;ACCELERATE
+player: id:1 position: y:2 x:309 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:107 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:99 speed:6
+
+[░░»░░░░░░░#░░░░░░░░░░░░░░░]
+[░░░░*1░▓░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░▓░░░▓T░░░░░░░░░░░░]
+[░░░░░░░»░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 34
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:34
+Received command C;34;ACCELERATE
+player: id:1 position: y:2 x:315 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:105 speed:6
+
+[░░░░#░░░░░░░░░░░░░░░»░░░░░]
+[░▓░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░▓░░░▓T░░░░░░░░░░░░░#░░░░]
+[░»░░░░░░░░░░░░░░░░░░░░░░░Φ]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 35
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:35
+Received command C;35;ACCELERATE
+player: id:1 position: y:2 x:318 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:111 speed:6
+
+[░#░░░░░░░░░░░░░░░»░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░▓T░░░░░░░░░░░░░#░░░░»░░]
+[░░░░░░░░░░░░░░░░░░░░░░Φ░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 36
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:36
+Received command C;36;ACCELERATE
+player: id:1 position: y:2 x:321 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:117 speed:6
+
+[░░░░░░░░░░░░░░»░░░░░░░░#▓░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░T]
+[▓T░░░░░░░░░░░░░#░░░░»░░░T∱]
+[░░░░░░░░░░░░░░░░░░░Φ░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 37
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:37
+Received command C;37;ACCELERATE
+player: id:1 position: y:2 x:324 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:123 speed:6
+
+[░░░░░░░░░░░»░░░░░░░░#▓░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░T░░░]
+[░░░░░░░░░░░░#░░░░»░░░T∱░░░]
+[░░░░░░░░░░░░░░░░Φ░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 38
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:38
+Received command C;38;ACCELERATE
+player: id:1 position: y:2 x:327 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:129 speed:6
+
+[░░░░░░░░»░░░░░░░░#▓░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░T░░░░░░]
+[░░░░░░░░░#░░░░»░░░T∱░░░░░░]
+[░░░░░░░░░░░░░Φ░░░░░░░░░▓▓▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 39
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:39
+Received command C;39;ACCELERATE
+player: id:1 position: y:2 x:330 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:135 speed:6
+
+[░░░░░»░░░░░░░░#▓░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░T░░░░░░░░▓]
+[░░░░░░#░░░░»░░░T∱░░░░░░░░░]
+[░░░░░░░░░░Φ░░░░░░░░░▓▓▓*░T]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 40
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:40
+Received command C;40;ACCELERATE
+player: id:1 position: y:2 x:333 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:141 speed:0
+
+[░░»░░░░░░░░#▓░░░░░░░░░░T░░]
+[░░░░░1░░░░░░░T░░░░░░░░▓░T░]
+[░░░#░░░░»░░░T∱░░░░░░░░░░░░]
+[░░░░░░░Φ░░░░░░░░░▓▓▓*░T░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 41
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:41
+Received command C;41;ACCELERATE
+player: id:1 position: y:2 x:336 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:141 speed:0
+
+[░░░░░░░░#▓░░░░░░░░░░T░░░░░]
+[░░░░░1░░░░T░░░░░░░░▓░T░Φ░░]
+[#░░░░»░░░T∱░░░░░░░░░░░░░░░]
+[░░░░Φ░░░░░░░░░▓▓▓*░T░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 42
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:42
+Received command C;42;ACCELERATE
+player: id:1 position: y:2 x:339 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:104 
+powerups: OIL:1, EMP:1, TWEET:3
+opponent: id:2 position: y:4 x:144 speed:0
+
+[░░░░░#▓░░░░░░░░░░T░░░░░░░░]
+[░░░░░1░T░░░░░░░░▓░T░Φ░░░░░]
+[░░»░░░T∱░░░░░░░░░░░░░░░░░░]
+[░Φ░░░░░░░░░▓▓▓*░T░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 43
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:43
+Received command C;43;ACCELERATE
+player: id:1 position: y:2 x:342 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:108 
+powerups: OIL:1, EMP:1, TWEET:4
+opponent: id:2 position: y:4 x:144 speed:0
+
+[░░#▓░░░░░░░░░░T░░░░░░░░░░░]
+[░░░░T1░░░░░░░▓░T░Φ░░░░░░░T]
+[░░░T∱░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░▓▓▓*░T░░░░░░░#░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 44
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:44
+Received command C;44;ACCELERATE
+player: id:1 position: y:2 x:345 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:108 
+powerups: OIL:1, EMP:1, TWEET:4
+opponent: id:2 position: y:4 x:147 speed:3
+
+[▓░░░░░░░░░░T░░░░░░░░░░░░░░]
+[░T░░░1░░░░▓░T░Φ░░░░░░░T░░░]
+[T∱░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░▓▓▓*░T░░░░░░░#░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 45
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:45
+Received command C;45;ACCELERATE
+player: id:1 position: y:2 x:348 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:108 
+powerups: OIL:1, EMP:1, TWEET:4
+opponent: id:2 position: y:4 x:153 speed:6
+
+[░░░░░░░░T░░░░░░░░░░░░░░░░░]
+[░░░░░1░▓░T░Φ░░░░░░░T░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░▓▓▓*░T░░░░░░░#░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 46
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:46
+Received command C;46;FIX
+player: id:1 position: y:2 x:351 speed:0 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:5 score:105 
+powerups: OIL:1, EMP:1, TWEET:4
+opponent: id:2 position: y:4 x:159 speed:6
+
+[░░░░░T░░░░░░░░░░░░░░░░░░░░]
+[░░░░▓1T░Φ░░░░░░░T░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░▓]
+[▓▓*░T░░░░░░░#░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 47
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:47
+Received command C;47;ACCELERATE
+player: id:1 position: y:2 x:351 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:105 
+powerups: OIL:1, EMP:1, TWEET:4
+opponent: id:2 position: y:4 x:165 speed:6
+
+[░░░░░T░░░░░░░░░░░░░░░░░░░░]
+[░░░░▓1T░Φ░░░░░░░T░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░▓]
+[▓▓*░T░░░░░░░#░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 48
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:48
+Received command C;48;ACCELERATE
+player: id:1 position: y:2 x:354 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:113 
+powerups: OIL:2, EMP:1, TWEET:5
+opponent: id:2 position: y:4 x:171 speed:6
+
+[░░T░░░░░░░░░░░░░░░░░░░░░░░]
+[░▓░T░1░░░░░░░T░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░▓░░░]
+[░T░░░░░░░#░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 49
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:49
+Received command C;49;ACCELERATE
+player: id:1 position: y:2 x:360 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:113 
+powerups: OIL:2, EMP:1, TWEET:5
+opponent: id:2 position: y:4 x:177 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░T░░░░░░░░░░░░░░░»▓░]
+[░░░░░░░░░░░░░░░░▓░░░░░░░∱░]
+[░░░#░░░░░░░░░░░░░░░░T░░▓░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 50
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:50
+Received command C;50;ACCELERATE
+player: id:1 position: y:2 x:366 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:117 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:183 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░T░░░1░░░░░░░░░░░»▓░░░░░░░]
+[░░░░░░░░░░▓░░░░░░░∱░░░░░░░]
+[░░░░░░░░░░░░░░T░░▓░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 51
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:51
+Received command C;51;ACCELERATE
+player: id:1 position: y:2 x:372 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:117 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:189 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░▓▓▓]
+[░░░░░1░░░░░»▓░░░░░░░░░░░▓░]
+[░░░░▓░░░░░░░∱░░░░░░░░░░∱░░]
+[░░░░░░░░T░░▓░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 52
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:52
+Received command C;52;USE_BOOST
+player: id:1 position: y:2 x:378 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:121 
+powerups: OIL:2, BOOST:1, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:192 speed:3
+
+[░░░░░░░░░░░░░░░░░▓▓▓░#░░░░]
+[░░░░░1▓░░░░░░░░░░░▓░░░░░░░]
+[░░░░░░∱░░░░░░░░░░∱░░░░░░░▓]
+[░░T░░▓░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 53
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:53
+Received command C;53;ACCELERATE
+player: id:1 position: y:2 x:384 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:USED_BOOST, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:122 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:195 speed:3
+
+[░░░░░░░░░░░▓▓▓░#░░░░░░░∱░░]
+[▓░░░░1░░░░░░▓░░░░░░░░░░░░*]
+[∱░░░░░░░░░░∱░░░░░░░▓░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░T░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 54
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:54
+Received command C;54;ACCELERATE
+player: id:1 position: y:2 x:387 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:122 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:198 speed:3
+
+[░░░░░░░░▓▓▓░#░░░░░░░∱░░░░░]
+[░░░░░1░░░▓░░░░░░░░░░░░*░░░]
+[░░░░░░░░∱░░░░░░░▓░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░T░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 55
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:55
+Received command C;55;ACCELERATE
+player: id:1 position: y:2 x:390 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:122 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:201 speed:3
+
+[░░░░░▓▓▓░#░░░░░░░∱░░░░░░░░]
+[░░░░░1▓░░░░░░░░░░░░*░░░░░░]
+[░░░░░∱░░░░░░░▓░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░T░░░░░░░∱░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 56
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:56
+Received command C;56;FIX
+player: id:1 position: y:2 x:393 speed:0 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:5 score:119 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:204 speed:0
+
+[░░▓▓▓░#░░░░░░░∱░░░░░░░░░░░]
+[░░░▓░1░░░░░░░░░░*░░░░░░░░░]
+[░░∱░░░░░░░▓░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░T░░░░░░░∱░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 57
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:57
+Received command C;57;ACCELERATE
+player: id:1 position: y:2 x:393 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:119 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:204 speed:0
+
+[░░▓▓▓░#░░░░░░░∱░░░░░░░░░░░]
+[░░░▓░1░░░░░░░░░░*░░░░░░░░░]
+[░░∱░░░░░░░▓░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░T░░░░░░░∱░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 58
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:58
+Received command C;58;ACCELERATE
+player: id:1 position: y:2 x:396 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:119 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:207 speed:3
+
+[▓▓░#░░░░░░░∱░░░░░░░░░░░░░░]
+[▓░░░░1░░░░░░░*░░░░░░░░░░░░]
+[░░░░░░░▓░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░T░░░░░░░∱░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 59
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:59
+Received command C;59;ACCELERATE
+player: id:1 position: y:2 x:402 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:119 
+powerups: OIL:2, EMP:1, TWEET:6
+opponent: id:2 position: y:4 x:213 speed:6
+
+[░░░░░∱░░░░░░░░░░░░░░░*░░░#]
+[░░░░░1░*░░░░░░░░░░░░░░░░░▓]
+[░▓░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░T░░░░░░░∱░░░░░░░░░░░░▓░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 60
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:60
+Received command C;60;ACCELERATE
+player: id:1 position: y:2 x:408 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:123 
+powerups: OIL:2, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:219 speed:6
+
+[░░░░░░░░░░░░░░░*░░░#░░░░░░]
+[░*░░░1░░░░░░░░░░░░░▓░░∱░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░∱░░░░░░░░░░░░▓░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 61
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:61
+Received command C;61;ACCELERATE
+player: id:1 position: y:2 x:414 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:123 
+powerups: OIL:2, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:225 speed:6
+
+[░░░░░░░░░*░░░#░░░░░░░░░T░░]
+[░░░░░1░░░░░░░▓░░∱░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░▓░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 62
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:62
+Received command C;62;ACCELERATE
+player: id:1 position: y:2 x:420 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:123 
+powerups: OIL:2, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:231 speed:6
+
+[░░░*░░░#░░░░░░░░░T░░░░░░░░]
+[░░░░░1░▓░░∱░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░▓░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 63
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:63
+Received command C;63;ACCELERATE
+player: id:1 position: y:2 x:426 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:237 speed:6
+
+[░#░░░░░░░░░T░░░░░░░░░░░▓▓▓]
+[░▓░░∱1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░#]
+[▓░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 64
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:64
+Received command C;64;ACCELERATE
+player: id:1 position: y:2 x:429 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:243 speed:6
+
+[░░░░░░░░T░░░░░░░░░░░▓▓▓▓░░]
+[░∱░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░#░░#]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 65
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:65
+Received command C;65;ACCELERATE
+player: id:1 position: y:2 x:432 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:249 speed:6
+
+[░░░░░T░░░░░░░░░░░▓▓▓▓░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░#░░#░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░T░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 66
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:66
+Received command C;66;ACCELERATE
+player: id:1 position: y:2 x:435 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:255 speed:3
+
+[░░T░░░░░░░░░░░▓▓▓▓░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░#░░#░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░T░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 67
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:67
+Received command C;67;ACCELERATE
+player: id:1 position: y:2 x:438 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:258 speed:3
+
+[░░░░░░░░░░░▓▓▓▓░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░#░░#░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░T░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 68
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:68
+Received command C;68;ACCELERATE
+player: id:1 position: y:2 x:441 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:261 speed:3
+
+[░░░░░░░░▓▓▓▓░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░#░]
+[░░░░░░░░░░#░░#░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░T░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 69
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:69
+Received command C;69;ACCELERATE
+player: id:1 position: y:2 x:444 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:264 speed:3
+
+[░░░░░▓▓▓▓░░░░░░░░░░░░░░░Φ░]
+[░░░░░1░░░░░░░░░░░░░░░#░░░Φ]
+[░░░░░░░#░░#░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░T░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 70
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:70
+Received command C;70;ACCELERATE
+player: id:1 position: y:2 x:447 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:267 speed:3
+
+[░░▓▓▓▓░░░░░░░░░░░░░░░Φ░░░░]
+[░░░░░1░░░░░░░░░░░░#░░░Φ░░░]
+[░░░░#░░#░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░T░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 71
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:71
+Received command C;71;ACCELERATE
+player: id:1 position: y:2 x:450 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:270 speed:0
+
+[▓▓▓░░░░░░░░░░░░░░░Φ░░░░#░░]
+[░░░░░1░░░░░░░░░#░░░Φ░░░░░░]
+[░#░░#░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░T░░░░░░░░░░░░░░░░▓░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 72
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:72
+Received command C;72;ACCELERATE
+player: id:1 position: y:2 x:453 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:270 speed:0
+
+[░░░░░░░░░░░░░░░Φ░░░░#░░░»░]
+[░░░░░1░░░░░░#░░░Φ░░░░░░░░░]
+[░#░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░T░░░░░░░░░░░░░░░░▓░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 73
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:73
+Received command C;73;ACCELERATE
+player: id:1 position: y:2 x:456 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:273 speed:3
+
+[░░░░░░░░░░░░Φ░░░░#░░░»░░░░]
+[░░░░░1░░░#░░░Φ░░░░░░░░░░T░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[T░░░░░░░░░░░░░░░░▓░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 74
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:74
+Received command C;74;ACCELERATE
+player: id:1 position: y:2 x:459 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:124 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:279 speed:6
+
+[░░░░░░░░░Φ░░░░#░░░»░░░░░░░]
+[░░░░░1#░░░Φ░░░░░░░░░░T░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░▓]
+[░░░░░░░░░░░░░░▓░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 75
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:75
+Received command C;75;FIX
+player: id:1 position: y:2 x:462 speed:0 state:HIT_WALL 
+statesThatOccurredThisRound:ACCELERATING, HIT_WALL 
+boosting:false boost-counter:0 damage:5 score:119 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:285 speed:6
+
+[░░░░░░Φ░░░░#░░░»░░░░░░░░░░]
+[░░░#░1░Φ░░░░░░░░░░T░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░▓░░░]
+[░░░░░░░░░░░▓░░░░░░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 76
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:76
+Received command C;76;ACCELERATE
+player: id:1 position: y:2 x:462 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:119 
+powerups: OIL:2, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:291 speed:0
+
+[░░░░░░Φ░░░░#░░░»░░░░░░░░░░]
+[░░░#░1░Φ░░░░░░░░░░T░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░▓░░░]
+[░░░░░░░░░░░▓░░░░░░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 77
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:77
+Received command C;77;ACCELERATE
+player: id:1 position: y:2 x:465 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:123 
+powerups: OIL:3, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:291 speed:0
+
+[░░░Φ░░░░#░░░»░░░░░░░░░░░░░]
+[#░░░Φ1░░░░░░░░░T░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░▓░░░░░░]
+[░░░░░░░░▓░░░░░░░░░░░░#░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 78
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:78
+Received command C;78;ACCELERATE
+player: id:1 position: y:2 x:471 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:123 
+powerups: OIL:3, LIZARD:1, EMP:2, TWEET:6
+opponent: id:2 position: y:4 x:294 speed:0
+
+[░░#░░░»░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░T░░░░░░░░░░░░∱░░░]
+[░░░░░░░░░░░░░▓░░░░░░░▓░░░░]
+[░░▓░░░░░░░░░░░░#░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 79
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:79
+Received command C;79;ACCELERATE
+player: id:1 position: y:2 x:477 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:127 
+powerups: OIL:3, LIZARD:1, EMP:2, TWEET:7
+opponent: id:2 position: y:4 x:294 speed:0
+
+[»░░░░░░░░░░░░░░░░░░░▓▓░░░▓]
+[░░░T░1░░░░░░░░░░∱░░░░░T░░░]
+[░░░░░░░▓░░░░░░░▓░░░░░░░░░░]
+[░░░░░░░░░#░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 80
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:80
+Received command C;80;ACCELERATE
+player: id:1 position: y:2 x:483 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:127 
+powerups: OIL:3, LIZARD:1, EMP:2, TWEET:7
+opponent: id:2 position: y:4 x:297 speed:3
+
+[░░░░░░░░░░░░░░▓▓░░░▓░░░░░░]
+[░░░░░1░░░░∱░░░░░T░░░░░░░∱░]
+[░▓░░░░░░░▓░░░░░░░░░░░#░░░░]
+[░░░#░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 81
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:81
+Received command C;81;ACCELERATE
+player: id:1 position: y:2 x:489 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:131 
+powerups: OIL:3, LIZARD:2, EMP:2, TWEET:7
+opponent: id:2 position: y:4 x:303 speed:6
+
+[░░░░░░░░▓▓░░░▓░░░░░░░░░░░░]
+[░░░░∱1░░░░T░░░░░░░∱░░░T░░T]
+[░░░▓░░░░░░░░░░░#░░░░░░░░░*]
+[░░░░░░░░░░░░░░░░░░░░░░░∱░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 82
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:82
+Received command C;82;ACCELERATE
+player: id:1 position: y:2 x:495 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:135 
+powerups: OIL:3, LIZARD:2, EMP:2, TWEET:8
+opponent: id:2 position: y:4 x:309 speed:6
+
+[░░▓▓░░░▓░░░░░░░░░░░░░░░░░░]
+[░░░░T1░░░░░░∱░░░T░░TΦ░░∱░#]
+[░░░░░░░░░#░░░░░░░░░*░░░░░░]
+[░░░░░░░░░░░░░░░░░∱░░░░░T░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 83
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:83
+Received command C;83;ACCELERATE
+player: id:1 position: y:2 x:501 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:135 
+powerups: OIL:3, LIZARD:2, EMP:2, TWEET:8
+opponent: id:2 position: y:4 x:315 speed:6
+
+[░▓░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1∱░░░T░░TΦ░░∱░#░░░░░░]
+[░░░#░░░░░░░░░*░░░░░░░░░░░░]
+[░░░░░░░░░░░∱░░░░░T░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 84
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:84
+Received command C;84;ACCELERATE
+player: id:1 position: y:2 x:507 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:143 
+powerups: OIL:3, LIZARD:3, EMP:2, TWEET:9
+opponent: id:2 position: y:4 x:321 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░*░▓▓▓░]
+[∱░░░T1░TΦ░░∱░#░░░░░░░░░▓░░]
+[░░░░░░░*░░░░░░░░░░░░░░░░░░]
+[░░░░░∱░░░░░T░░░░░░░░░▓░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 85
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:85
+Received command C;85;ACCELERATE
+player: id:1 position: y:2 x:513 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:155 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:327 speed:6
+
+[░░░░░░░░░░░░░░*░▓▓▓░░Φ░░░*]
+[░TΦ░░1░#░░░░░░░░░▓░░░░░░░░]
+[░*░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░T░░░░░░░░░▓░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 86
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:86
+Received command C;86;FIX
+player: id:1 position: y:2 x:519 speed:0 state:HIT_WALL 
+statesThatOccurredThisRound:ACCELERATING, HIT_WALL 
+boosting:false boost-counter:0 damage:5 score:150 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:333 speed:6
+
+[░░░░░░░░*░▓▓▓░░Φ░░░*░░░░░░]
+[░#░░░1░░░░░▓░░░░░░░░░░*░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░▓░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 87
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:87
+Received command C;87;ACCELERATE
+player: id:1 position: y:2 x:519 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:150 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:339 speed:6
+
+[░░░░░░░░*░▓▓▓░░Φ░░░*░░░░░░]
+[░#░░░1░░░░░▓░░░░░░░░░░*░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░▓░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 88
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:88
+Received command C;88;ACCELERATE
+player: id:1 position: y:2 x:522 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:150 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:345 speed:3
+
+[░░░░░*░▓▓▓░░Φ░░░*░░░░░░░░░]
+[░░░░░1░░▓░░░░░░░░░░*░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░▓░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 89
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:89
+Received command C;89;ACCELERATE
+player: id:1 position: y:2 x:528 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:147 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:348 speed:0
+
+[░▓▓▓░░Φ░░░*░░░░░░░░░░░░░░░]
+[░░▓░░1░░░░░░░*░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[▓░░░░░░░░░░░░░░░░░░░░░▓░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 90
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:90
+Received command C;90;ACCELERATE
+player: id:1 position: y:2 x:531 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:147 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:348 speed:0
+
+[▓░░Φ░░░*░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░*░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 91
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:91
+Received command C;91;ACCELERATE
+player: id:1 position: y:2 x:534 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:147 
+powerups: OIL:4, LIZARD:4, EMP:2, TWEET:10
+opponent: id:2 position: y:4 x:351 speed:3
+
+[Φ░░░*░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░*░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░#]
+[░░░░░░░░░░░░░░░░▓░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 92
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:92
+Received command C;92;ACCELERATE
+player: id:1 position: y:2 x:537 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:357 speed:6
+
+[░*░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░*1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░#░░░]
+[░░░░░░░░░░░░░▓░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 93
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:93
+Received command C;93;ACCELERATE
+player: id:1 position: y:2 x:540 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:363 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░T]
+[░*░░░1░░░░░░░░░░░░░░░░░░░#]
+[░░░░░░░░░░░░░░░░░░░#░░░░░░]
+[░░░░░░░░░░▓░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 94
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:94
+Received command C;94;ACCELERATE
+player: id:1 position: y:2 x:543 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:363 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░T░░░]
+[░░░░░1░░░░░░░░░░░░░░░░#░░░]
+[░░░░░░░░░░░░░░░░#░░░░░░░░░]
+[░░░░░░░▓░░░░░░░░░░░░░░░#░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 95
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:95
+Received command C;95;ACCELERATE
+player: id:1 position: y:2 x:546 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:366 speed:3
+
+[░░░░░░░░░░░░░░░░░░░T░░░░░░]
+[░░░░░1░░░░░░░░░░░░░#░░░░░░]
+[░░░░░░░░░░░░░#░░░░░░░░░░░#]
+[░░░░▓░░░░░░░░░░░░░░░#░░#░▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 96
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:96
+Received command C;96;ACCELERATE
+player: id:1 position: y:2 x:549 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:372 speed:6
+
+[░░░░░░░░░░░░░░░░T░░░░░░░░░]
+[░░░░░1░░░░░░░░░░#░░░░░░░░░]
+[░░░░░░░░░░#░░░░░░░░░░░#░░░]
+[░▓░░░░░░░░░░░░░░░#░░#░▓░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 97
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:97
+Received command C;97;ACCELERATE
+player: id:1 position: y:2 x:552 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:378 speed:3
+
+[░░░░░░░░░░░░░T░░░░░░░░░░░░]
+[░░░░░1░░░░░░░#░░░░░░░░░░░»]
+[░░░░░░░#░░░░░░░░░░░#░░░░░░]
+[░░░░░░░░░░░░░░#░░#░▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 98
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:98
+Received command C;98;ACCELERATE
+player: id:1 position: y:2 x:555 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:381 speed:3
+
+[░░░░░░░░░░T░░░░░░░░░░░░░░░]
+[░░░░░1░░░░#░░░░░░░░░░░»░░░]
+[░░░░#░░░░░░░░░░░#░░░░░░░░░]
+[░░░░░░░░░░░#░░#░▓░░░░░░░#░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 99
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:99
+Received command C;99;ACCELERATE
+player: id:1 position: y:2 x:558 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:151 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:384 speed:3
+
+[░░░░░░░T░░░░░░░░░░░░░░░∱░░]
+[░░░░░1░#░░░░░░░░░░░»░░░»░░]
+[░#░░░░░░░░░░░#░░░░░░░░░░░░]
+[░░░░░░░░#░░#░▓░░░░░░░#░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 100
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:100
+Received command C;100;FIX
+player: id:1 position: y:2 x:561 speed:0 state:HIT_WALL 
+statesThatOccurredThisRound:ACCELERATING, HIT_WALL 
+boosting:false boost-counter:0 damage:5 score:146 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:387 speed:3
+
+[░░░░T░░░░░░░░░░░░░░░∱░░T∱░]
+[░░░░#1░░░░░░░░░░»░░░»░░░░░]
+[░░░░░░░░░░#░░░░░░░░░░░░░#░]
+[░░░░░#░░#░▓░░░░░░░#░░░░░*░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 101
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:101
+Received command C;101;ACCELERATE
+player: id:1 position: y:2 x:561 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:146 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:390 speed:3
+
+[░░░░T░░░░░░░░░░░░░░░∱░░T∱░]
+[░░░░#1░░░░░░░░░░»░░░»░░░░░]
+[░░░░░░░░░░#░░░░░░░░░░░░░#░]
+[░░░░░#░░#░▓░░░░░░░#░░░░░*░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 102
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:102
+Received command C;102;ACCELERATE
+player: id:1 position: y:2 x:564 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:146 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:393 speed:3
+
+[░T░░░░░░░░░░░░░░░∱░░T∱░░░░]
+[░#░░░1░░░░░░░»░░░»░░░░░░░░]
+[░░░░░░░#░░░░░░░░░░░░░#░░░░]
+[░░#░░#░▓░░░░░░░#░░░░░*░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 103
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:103
+Received command C;103;ACCELERATE
+player: id:1 position: y:2 x:570 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:146 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:396 speed:3
+
+[░░░░░░░░░░░∱░░T∱░░░░░░░▓░░]
+[░░░░░1░»░░░»░░░░░░░░░░░░*T]
+[░#░░░░░░░░░░░░░#░░░░░░▓░░░]
+[░▓░░░░░░░#░░░░░*░░░░░*▓▓░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 104
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:104
+Received command C;104;USE_BOOST
+player: id:1 position: y:2 x:576 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:154 
+powerups: LIZARD:4, TWEET:10, EMP:3, OIL:4, BOOST:2
+opponent: id:2 position: y:4 x:399 speed:3
+
+[░░░░░∱░░T∱░░░░░░░▓░░░░░░░░]
+[░»░░░1░░░░░░░░░░░░*T░░░░░░]
+[░░░░░░░░░#░░░░░░▓░░░░░░░░░]
+[░░░#░░░░░*░░░░░*▓▓░░░T░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 105
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:105
+Received command C;105;USE_BOOST
+player: id:1 position: y:2 x:582 speed:6 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:3 score:158 
+powerups: LIZARD:4, TWEET:10, EMP:3, OIL:4, BOOST:1
+opponent: id:2 position: y:4 x:402 speed:3
+
+[░░T∱░░░░░░░▓░░░░░░░░░░░░T▓]
+[░░░░░1░░░░░░*T░░░░░░░░░░░░]
+[░░░#░░░░░░▓░░░░░░░░░░░░░░░]
+[░░░*░░░░░*▓▓░░░T░░░░░░░░▓░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 106
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:106
+Received command C;106;ACCELERATE
+player: id:1 position: y:2 x:588 speed:6 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:3 score:162 
+powerups: OIL:4, LIZARD:4, EMP:3, TWEET:10
+opponent: id:2 position: y:4 x:405 speed:3
+
+[░░░░░▓░░░░░░░░░░░░T▓░░░░░░]
+[░░░░░1*T░░░░░░░░░░░░░░░░░░]
+[░░░░▓░░░░░░░░░░░░░░░░░░░░░]
+[░░░*▓▓░░░T░░░░░░░░▓░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 107
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:107
+Received command C;107;ACCELERATE
+player: id:1 position: y:2 x:594 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:4 damage:3 score:170 
+powerups: OIL:4, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:408 speed:3
+
+[░░░░░░░░░░░░T▓░░░░░░░░░░░Φ]
+[*T░░░1░░░░░░░░░░░░░░#░░Φ░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░T░░░░░░░░▓░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 108
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:108
+Received command C;108;ACCELERATE
+player: id:1 position: y:2 x:600 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:3 damage:3 score:170 
+powerups: OIL:4, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:411 speed:3
+
+[░░░░░░T▓░░░░░░░░░░░Φ░░░░░░]
+[░░░░░1░░░░░░░░#░░Φ░░░░░T░*]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░▓░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 109
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:109
+Received command C;109;ACCELERATE
+player: id:1 position: y:2 x:606 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:2 damage:3 score:170 
+powerups: OIL:4, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:414 speed:3
+
+[T▓░░░░░░░░░░░Φ░░░░░░░░░░░░]
+[░░░░░1░░#░░Φ░░░░░T░*░▓░∱░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[▓░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 110
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:110
+Received command C;110;FIX
+player: id:1 position: y:2 x:612 speed:0 state:HIT_WALL 
+statesThatOccurredThisRound:ACCELERATING, HIT_WALL 
+boosting:false boost-counter:0 damage:5 score:169 
+powerups: OIL:5, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:417 speed:3
+
+[░░░░░░░Φ░░░░░░░░░░░░░░░▓░░]
+[░░#░░1░░░░░T░*░▓░∱░░░░░░▓░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░▓]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 111
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:111
+Received command C;111;ACCELERATE
+player: id:1 position: y:2 x:612 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:169 
+powerups: OIL:5, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:420 speed:3
+
+[░░░░░░░Φ░░░░░░░░░░░░░░░▓░░]
+[░░#░░1░░░░░T░*░▓░∱░░░░░░▓░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░▓]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 112
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:112
+Received command C;112;ACCELERATE
+player: id:1 position: y:2 x:615 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:169 
+powerups: OIL:5, LIZARD:4, EMP:4, TWEET:11
+opponent: id:2 position: y:4 x:423 speed:0
+
+[░░░░Φ░░░░░░░░░░░░░░░▓░░░░░]
+[░░Φ░░1░░T░*░▓░∱░░░░░░▓░░░▓]
+[░░░░░░░░░░░░░░░░░░░░░░▓▓░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 113
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:113
+Received command C;113;USE_LIZARD
+player: id:1 position: y:2 x:621 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:4, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:423 speed:0
+
+[░░░░░░░░░░░░░░▓░░░░░░»░░░»]
+[░░T░*1▓░∱░░░░░░▓░░░▓░░░░░░]
+[░░░░░░░░░░░░░░░░▓▓░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░░░░░░░*]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 114
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:114
+Received command C;114;USE_LIZARD
+player: id:1 position: y:2 x:627 speed:6 state:USED_LIZARD 
+statesThatOccurredThisRound:USED_LIZARD 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:3, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:426 speed:3
+
+[░░░░░░░░▓░░░░░░»░░░»░▓░░∱░]
+[▓░∱░░1░░░▓░░░▓░░░░░░░░░░░░]
+[░░░░░░░░░░▓▓░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░*░░░░*░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 115
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:115
+Received command C;115;USE_LIZARD
+player: id:1 position: y:2 x:633 speed:6 state:USED_LIZARD 
+statesThatOccurredThisRound:USED_LIZARD 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:2, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:432 speed:6
+
+[░░▓░░░░░░»░░░»░▓░░∱░░░░░░░]
+[░░░▓░1░▓░░░░░░░░░░░░░░░░░░]
+[░░░░▓▓░░░░░░░░░░░░░░░░░░░#]
+[░░░░░░░░░░░░░*░░░░*░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 116
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:116
+Received command C;116;ACCELERATE
+player: id:1 position: y:2 x:639 speed:6 state:USED_LIZARD 
+statesThatOccurredThisRound:USED_LIZARD 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:438 speed:6
+
+[░░░»░░░»░▓░░∱░░░░░░░░░░░░░]
+[░▓░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░░░░░░#░░▓░░░]
+[░░░░░░░*░░░░*░░░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 117
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:117
+Received command C;117;ACCELERATE
+player: id:1 position: y:2 x:645 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:444 speed:6
+
+[░»░▓░░∱░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░#░░▓░░░░░░░░░]
+[░*░░░░*░░░░░░░░░░░░░#░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 118
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:118
+Received command C;118;ACCELERATE
+player: id:1 position: y:2 x:651 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:450 speed:6
+
+[∱░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░#░░▓░░░░░░░░░░▓▓▓∱░]
+[*░░░░░░░░░░░░░#░░░░░░░▓▓▓▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 119
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:119
+Received command C;119;ACCELERATE
+player: id:1 position: y:2 x:657 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:456 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░#░░▓░░░░░░░░░░▓▓▓∱░░░░░░░]
+[░░░░░░░░#░░░░░░░▓▓▓▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 120
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:120
+Received command C;120;ACCELERATE
+player: id:1 position: y:2 x:663 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:462 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░▓]
+[░░░░░░░░░▓▓▓∱░░░░░░░░░░░░▓]
+[░░#░░░░░░░▓▓▓▓░░░░░░Φ░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 121
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:121
+Received command C;121;ACCELERATE
+player: id:1 position: y:2 x:669 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:468 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░#]
+[░░░░░1░░░░░░░░░░░░░▓░░░░░░]
+[░░░▓▓▓∱░░░░░░░░░░░░▓░░░░░░]
+[░░░░▓▓▓▓░░░░░░Φ░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 122
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:122
+Received command C;122;USE_LIZARD
+player: id:1 position: y:2 x:675 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, LIZARD:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:471 speed:3
+
+[░░░░░░░░░░░░░░░░░░░#░░░░░░]
+[░░░░░1░░░░░░░▓░░░░░░░»░░░░]
+[∱░░░░░░░░░░░░▓░░░░░░░░░░░░]
+[▓▓░░░░░░Φ░░░░░░░░░░░»░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 123
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:123
+Received command C;123;ACCELERATE
+player: id:1 position: y:2 x:681 speed:6 state:USED_LIZARD 
+statesThatOccurredThisRound:USED_LIZARD 
+boosting:false boost-counter:0 damage:3 score:177 
+powerups: OIL:5, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:474 speed:3
+
+[░░░░░░░░░░░░░#░░░░░░░░░░░░]
+[░░░░░1░▓░░░░░░░»░░░░░░░░░░]
+[░░░░░░░▓░░░░░░░░░░░░░░░»░░]
+[░░Φ░░░░░░░░░░░»░░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 124
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:124
+Received command C;124;ACCELERATE
+player: id:1 position: y:2 x:687 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:174 
+powerups: OIL:5, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:477 speed:3
+
+[░░░░░░░#░░░░░░░░░░░░░░░░░░]
+[░▓░░░1░░░»░░░░░░░░░░░░░░░░]
+[░▓░░░░░░░░░░░░░░░»░░░▓░░░░]
+[░░░░░░░░»░░░░░░░░░░░░▓░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 125
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:125
+Received command C;125;ACCELERATE
+player: id:1 position: y:2 x:690 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:174 
+powerups: OIL:5, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:480 speed:3
+
+[░░░░#░░░░░░░░░░░░░░░░░░░░#]
+[░░░░░1»░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░░░░»░░░▓░░░░░░░]
+[░░░░░»░░░░░░░░░░░░▓░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 126
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:126
+Received command C;126;ACCELERATE
+player: id:1 position: y:2 x:693 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:483 speed:0
+
+[░#░░░░░░░░░░░░░░░░░░░░#░░░]
+[░░░»░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░░»░░░▓░░░░░░░░░░]
+[░░»░░░░░░░░░░░░▓░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 127
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:127
+Received command C;127;ACCELERATE
+player: id:1 position: y:2 x:696 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:483 speed:0
+
+[░░░░░░░░░░░░░░░░░░░#░░░░░░]
+[»░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░░░░»░░░▓░░░░░░░░░░*░░]
+[░░░░░░░░░░░░▓░░░░░░░░░░#░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 128
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:128
+Received command C;128;ACCELERATE
+player: id:1 position: y:2 x:699 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:486 speed:3
+
+[░░░░░░░░░░░░░░░░#░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░░░░»░░░▓░░░░░░░░░░*░░░░░]
+[░░░░░░░░░▓░░░░░░░░░░#░░░»░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 129
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:129
+Received command C;129;ACCELERATE
+player: id:1 position: y:2 x:702 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:492 speed:6
+
+[░░░░░░░░░░░░░#░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░░░]
+[░░»░░░▓░░░░░░░░░░*░░░░░░░░]
+[░░░░░░▓░░░░░░░░░░#░░░»░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 130
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:130
+Received command C;130;ACCELERATE
+player: id:1 position: y:2 x:705 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:498 speed:6
+
+[░░░░░░░░░░#░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░░░░»*]
+[░░░▓░░░░░░░░░░*░░░░░░░░░░░]
+[░░░▓░░░░░░░░░░#░░░»░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 131
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:131
+Received command C;131;ACCELERATE
+player: id:1 position: y:2 x:708 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:504 speed:6
+
+[░░░░░░░#░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░░░░»*░░░]
+[▓░░░░░░░░░░*░░░░░░░░░░░»░#]
+[▓░░░░░░░░░░#░░░»░░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 132
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:132
+Received command C;132;ACCELERATE
+player: id:1 position: y:2 x:711 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:510 speed:6
+
+[░░░░#░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░░░░»*░░░░░░]
+[░░░░░░░░*░░░░░░░░░░░»░#░░»]
+[░░░░░░░░#░░░»░░░░░░░░░░░░▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 133
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:133
+Received command C;133;ACCELERATE
+player: id:1 position: y:2 x:714 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:516 speed:6
+
+[░#░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░»*░░░░░░░░Φ]
+[░░░░░*░░░░░░░░░░░»░#░░»»▓░]
+[░░░░░#░░░»░░░░░░░░░░░░▓▓▓░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 134
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:134
+Received command C;134;ACCELERATE
+player: id:1 position: y:2 x:717 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:522 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░»*░░░░░░░░Φ▓░░]
+[░░*░░░░░░░░░░░»░#░░»»▓░░░░]
+[░░#░░░»░░░░░░░░░░░░▓▓▓░░T░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 135
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:135
+Received command C;135;ACCELERATE
+player: id:1 position: y:2 x:720 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:528 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░»*░░░░░░░░Φ▓░░░░░]
+[░░░░░░░░░░░»░#░░»»▓░░░░░░░]
+[░░░»░░░░░░░░░░░░▓▓▓░░T░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 136
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:136
+Received command C;136;ACCELERATE
+player: id:1 position: y:2 x:723 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:178 
+powerups: OIL:5, BOOST:1, EMP:5, TWEET:12
+opponent: id:2 position: y:4 x:531 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1»*░░░░░░░░Φ▓░░░░░░░░]
+[░░░░░░░░»░#░░»»▓░░░░░░░░░░]
+[»░░░░░░░░░░░░▓▓▓░░T░░░░*░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 137
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:137
+Received command C;137;ACCELERATE
+player: id:1 position: y:2 x:726 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:186 
+powerups: OIL:5, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:534 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░»*1░░░░░░░Φ▓░░░░░░░░░░░]
+[░░░░░»░#░░»»▓░░░░░░░░░░░░░]
+[░░░░░░░░░░▓▓▓░░T░░░░*░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 138
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:138
+Received command C;138;ACCELERATE
+player: id:1 position: y:2 x:729 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:186 
+powerups: OIL:5, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:537 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[»*░░░1░░░░Φ▓░░░░░░░░░░░Φ░░]
+[░░»░#░░»»▓░░░░░░░░░░░░░░░▓]
+[░░░░░░░▓▓▓░░T░░░░*░░░░░░░#]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 139
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:139
+Received command C;139;ACCELERATE
+player: id:1 position: y:2 x:732 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:186 
+powerups: OIL:5, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:540 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░Φ▓░░░░░░░░░░░Φ░░░░░]
+[░#░░»»▓░░░░░░░░░░░░░░░▓░*░]
+[░░░░▓▓▓░░T░░░░*░░░░░░░#░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 140
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:140
+Received command C;140;FIX
+player: id:1 position: y:2 x:735 speed:0 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:5 score:187 
+powerups: OIL:6, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:543 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░Φ1░░░░░░░░░░░Φ░░░░░░░░]
+[░»»▓░░░░░░░░░░░░░░░▓░*░░░░]
+[░▓▓▓░░T░░░░*░░░░░░░#░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 141
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:141
+Received command C;141;ACCELERATE
+player: id:1 position: y:2 x:735 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:187 
+powerups: OIL:6, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:546 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░Φ1░░░░░░░░░░░Φ░░░░░░░░]
+[░»»▓░░░░░░░░░░░░░░░▓░*░░░░]
+[░▓▓▓░░T░░░░*░░░░░░░#░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 142
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:142
+Received command C;142;ACCELERATE
+player: id:1 position: y:2 x:738 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:187 
+powerups: OIL:6, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:546 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░Φ▓░░1░░░░░░░░Φ░░░░░░░░░░░]
+[▓░░░░░░░░░░░░░░░▓░*░░░░░░░]
+[▓░░T░░░░*░░░░░░░#░░░░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 143
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:143
+Received command C;143;USE_BOOST
+player: id:1 position: y:2 x:744 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:3 score:187 
+powerups: OIL:6, BOOST:2, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:549 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░Φ░░░░░░░░░░░░░░░░░]
+[░░░░░░░░░░▓░*░░░░░░░░▓░░░░]
+[░░*░░░░░░░#░░░░░░░░░░▓░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 144
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:144
+Received command C;144;USE_BOOST
+player: id:1 position: y:2 x:750 speed:6 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:3 score:195 
+powerups: OIL:7, BOOST:1, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:555 speed:6
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░Φ░░1░░░░░░░░░░░░░░░▓▓▓▓░]
+[░░░░▓░*░░░░░░░░▓░░░░░▓▓▓░░]
+[░░░░#░░░░░░░░░░▓░░░░░░▓▓∱░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 145
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:145
+Received command C;145;ACCELERATE
+player: id:1 position: y:2 x:756 speed:6 state:USED_BOOST 
+statesThatOccurredThisRound:USED_BOOST 
+boosting:true boost-counter:5 damage:3 score:199 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:561 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░░░░░░░▓▓▓▓░░░░░░▓]
+[*░░░░░░░░▓░░░░░▓▓▓░░░░░░░░]
+[░░░░░░░░░▓░░░░░░▓▓∱░░░░░░»]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 146
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:146
+Received command C;146;ACCELERATE
+player: id:1 position: y:2 x:762 speed:6 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:true boost-counter:4 damage:3 score:199 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:561 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░░]
+[░░░░░1░░░▓▓▓▓░░░░░░▓░Φ░░▓░]
+[░░░▓░░░░░▓▓▓░░░░░░░░░▓▓▓░░]
+[░░░▓░░░░░░▓▓∱░░░░░░»░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 147
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:147
+Received command C;147;FIX
+player: id:1 position: y:2 x:768 speed:0 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD, HIT_MUD, HIT_MUD 
+boosting:false boost-counter:0 damage:5 score:190 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:564 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░∱]
+[░░░▓▓1▓░░░░░░▓░Φ░░▓░░░░░░»]
+[░░░▓▓▓░░░░░░░░░▓▓▓░░Φ░░░░▓]
+[░░░░▓▓∱░░░░░░»░░░░░░░░T░░▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 148
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:148
+Received command C;148;ACCELERATE
+player: id:1 position: y:2 x:768 speed:0 state:FIXED_CAR 
+statesThatOccurredThisRound:FIXED_CAR 
+boosting:false boost-counter:0 damage:3 score:190 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:564 speed:0
+
+[░░░░░░░░░░░░░░░░░░░░░░░░░∱]
+[░░░▓▓1▓░░░░░░▓░Φ░░▓░░░░░░»]
+[░░░▓▓▓░░░░░░░░░▓▓▓░░Φ░░░░▓]
+[░░░░▓▓∱░░░░░░»░░░░░░░░T░░▓]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 149
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:149
+Received command C;149;ACCELERATE
+player: id:1 position: y:2 x:771 speed:3 state:HIT_MUD 
+statesThatOccurredThisRound:ACCELERATING, HIT_MUD 
+boosting:false boost-counter:0 damage:4 score:187 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:567 speed:3
+
+[░░░░░░░░░░░░░░░░░░░░░░∱░░░]
+[▓▓▓▓░1░░░░▓░Φ░░▓░░░░░░»░░░]
+[▓▓▓░░░░░░░░░▓▓▓░░Φ░░░░▓░░░]
+[░▓▓∱░░░░░░»░░░░░░░░T░░▓░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Starting round: 150
+Player A - CoffeeRef: Map View 
+======================================================================================================
+round:150
+Received command C;150;ACCELERATE
+player: id:1 position: y:2 x:774 speed:3 state:ACCELERATING 
+statesThatOccurredThisRound:ACCELERATING 
+boosting:false boost-counter:0 damage:4 score:187 
+powerups: OIL:7, EMP:6, TWEET:12
+opponent: id:2 position: y:4 x:570 speed:3
+
+[░░░░░░░░░░░░░░░░░░░∱░░░░░░]
+[▓░░░░1░▓░Φ░░▓░░░░░░»░░░░░░]
+[░░░░░░░░░▓▓▓░░Φ░░░░▓░░░»░░]
+[∱░░░░░░»░░░░░░░░T░░▓░░░░░░]
+======================================================================================================
+******************************************************************************************************
+
+
+Game Complete
+Checking if match is valid
+=======================================
+The winner is: A - CoffeeRef
+
+A - CoffeeRef - score:184 health:0
+B - CoffeeRef - score:-46 health:0
+
+=======================================
+******************************************************************************************************
+
+******************************************************************************************************
+
+
+
+D:\IF Semester 4\Strategi Algoritma\Tubes 1\starter-pack>pause
+Press any key to continue . . . 
