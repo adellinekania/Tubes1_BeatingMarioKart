@@ -68,6 +68,9 @@ public class Bot {
             }
         }
 
+         // PUNYA LIZA: NGINDARIN OBSTACLE
+        
+
         // PUNYA ADELLL : POWERUPSS
         // EMP
         if (hasPowerUp(PowerUps.EMP, myCar.powerups)) {
@@ -140,8 +143,48 @@ public class Bot {
             return OIL;
         }
 
+        
+        // PUNYA LIZA: KIRI KANAN YEY
+        // kalau di belakang lawan usahain ke tengah (harus empty)
+        if (opponent.position.block > myCar.position.block) {
+            System.out.println("TES BELOK 1");
+            if (myCar.position.lane == 1) {
+                List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState);
+                if (!(secondBlocks.contains(Terrain.MUD) || secondBlocks.contains(Terrain.WALL)
+                        || secondBlocks.contains(Terrain.OIL_SPILL))) {
+                    return TURN_RIGHT;
+                }
+            } else if (myCar.position.lane == 4) {
+                List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState);
+                if (!(thirdBlocks.contains(Terrain.MUD) || thirdBlocks.contains(Terrain.WALL)
+                        || thirdBlocks.contains(Terrain.OIL_SPILL))) {
+                    return TURN_LEFT;
+                }
+            }
+        }
+        // kalau di depan lawan usahain ke pinggir (harus empty)
+        if (opponent.position.block < myCar.position.block) {
+            System.out.println("TES BELOK 2");
+            if (myCar.position.lane == 2) {
+                List<Object> firstBlocks = getBlocksInFront(1, myCar.position.block, gameState);
+                if (!(firstBlocks.contains(Terrain.MUD) || firstBlocks.contains(Terrain.WALL)
+                        || firstBlocks.contains(Terrain.OIL_SPILL))) {
+                    return TURN_LEFT;
+                }
+            } else if (myCar.position.lane == 3) {
+                List<Object> fourthBlocks = getBlocksInFront(4, myCar.position.block, gameState);
+                if (!(fourthBlocks.contains(Terrain.MUD) || fourthBlocks.contains(Terrain.WALL)
+                        || fourthBlocks.contains(Terrain.OIL_SPILL))) {
+                    return TURN_RIGHT;
+                }
+            }
+        }
+        
+
+
         System.out.println("HADEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
 
+        
         return ACCELERATE;
     }
 
