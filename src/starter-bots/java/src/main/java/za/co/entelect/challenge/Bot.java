@@ -57,19 +57,48 @@ public class Bot {
             return FIX;
         }
 
-        // Basic avoidance logic
-        if (blocks.contains(Terrain.MUD) || nextBlocks.contains(Terrain.WALL)) {
+        // PUNYA LIZA: NGINDARIN OBSTACLE
+        if (!blocksAreEmpty(blocks)){
             if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
+                System.out.println("TES NGEHINDAR make liza(rd)");
                 return LIZARD;
-            }
-            if (nextBlocks.contains(Terrain.MUD) || nextBlocks.contains(Terrain.WALL)) {
-                int i = random.nextInt(directionList.size());
-                return directionList.get(i);
+            } else {
+                if (myCar.position.lane == 1) {
+                    List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState);
+                    if (blocksAreEmpty(secondBlocks)) {
+                        System.out.println("TES NGEHINDAR ke 2");
+                        return TURN_RIGHT;
+                    }
+                } else if (myCar.position.lane == 4) {
+                    List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState);
+                    if (blocksAreEmpty(thirdBlocks)) {
+                        System.out.println("TES NGEHINDAR ke 3");
+                        return TURN_LEFT;
+                    }
+                } else if (myCar.position.lane == 2) {
+                    List<Object> leftBlocks = getBlocksInFront(1, myCar.position.block, gameState);
+                    List<Object> rightBlocks = getBlocksInFront(3, myCar.position.block, gameState);
+                    if (blocksAreEmpty(leftBlocks)) {
+                        System.out.println("TES NGEHINDAR ke kiri");
+                        return TURN_LEFT;
+                    } else if (blocksAreEmpty(rightBlocks)) {
+                        System.out.println("TES NGEHINDAR ke kanan");
+                        return TURN_RIGHT;
+                    }
+                } else if (myCar.position.lane == 3) {
+                    List<Object> leftBlocks = getBlocksInFront(2, myCar.position.block, gameState);
+                    List<Object> rightBlocks = getBlocksInFront(4, myCar.position.block, gameState);
+                    if (blocksAreEmpty(rightBlocks)) {
+                        System.out.println("TES NGEHINDAR ke kanan");
+                        return TURN_RIGHT;
+                    } else if (blocksAreEmpty(leftBlocks)) {
+                        System.out.println("TES NGEHINDAR ke kiri");
+                        return TURN_LEFT;
+                    }
+                }
             }
         }
 
-         // PUNYA LIZA: NGINDARIN OBSTACLE
-        
 
         // PUNYA ADELLL : POWERUPSS
         // EMP
@@ -103,8 +132,7 @@ public class Bot {
         // BOOST
         if (hasPowerUp(PowerUps.BOOST, myCar.powerups)) {
             if (myCar.damage == 0) {
-                if (!(blocks.contains(Terrain.MUD) || blocks.contains(Terrain.WALL)
-                        || blocks.contains(Terrain.OIL_SPILL))) {
+                if (blocksAreEmpty(blocks)) {
                     return BOOST;
                 } else {
                     if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
@@ -115,22 +143,17 @@ public class Bot {
                                     gameState);
                             List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block,
                                     gameState);
-                            if ((!(leftBlocks.contains(Terrain.MUD) || leftBlocks.contains(Terrain.WALL)
-                                    || leftBlocks.contains(Terrain.OIL_SPILL)))
-                                    || (!(rightBlocks.contains(Terrain.MUD) || rightBlocks.contains(Terrain.WALL)
-                                            || rightBlocks.contains(Terrain.OIL_SPILL)))) {
+                            if (blocksAreEmpty(leftBlocks) || (blocksAreEmpty(rightBlocks))) {
                                 return BOOST;
                             }
                         } else if (myCar.position.lane == 1) {
                             List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState);
-                            if (!(secondBlocks.contains(Terrain.MUD) || secondBlocks.contains(Terrain.WALL)
-                                    || secondBlocks.contains(Terrain.OIL_SPILL))) {
+                            if (blocksAreEmpty(secondBlocks)) {
                                 return BOOST;
                             }
                         } else if (myCar.position.lane == 4) {
                             List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState);
-                            if (!(thirdBlocks.contains(Terrain.MUD) || thirdBlocks.contains(Terrain.WALL)
-                                    || thirdBlocks.contains(Terrain.OIL_SPILL))) {
+                            if (blocksAreEmpty(thirdBlocks)) {
                                 return BOOST;
                             }
                         }
@@ -143,48 +166,57 @@ public class Bot {
             return OIL;
         }
 
-        
+
         // PUNYA LIZA: KIRI KANAN YEY
-        // kalau di belakang lawan usahain ke tengah (harus empty)
+        // kalau di belakang lawan usahain supaya lawan masuk ke range EMP (harus empty)
         if (opponent.position.block > myCar.position.block) {
-            System.out.println("TES BELOK 1");
             if (myCar.position.lane == 1) {
                 List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState);
-                if (!(secondBlocks.contains(Terrain.MUD) || secondBlocks.contains(Terrain.WALL)
-                        || secondBlocks.contains(Terrain.OIL_SPILL))) {
+                if (blocksAreEmpty(secondBlocks)) {
+                    System.out.println("TES BELOK ke 2");
                     return TURN_RIGHT;
                 }
-            } else if (myCar.position.lane == 4) {
+            } else if (myCar.position.lane == 2 && opponent.position.lane == 4) {
                 List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState);
-                if (!(thirdBlocks.contains(Terrain.MUD) || thirdBlocks.contains(Terrain.WALL)
-                        || thirdBlocks.contains(Terrain.OIL_SPILL))) {
+                if (blocksAreEmpty(thirdBlocks)) {
+                    System.out.println("TES BELOK ke 3");
+                    return TURN_RIGHT;
+                }
+            } else if (myCar.position.lane == 3 && opponent.position.lane == 1) {
+                List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState);
+                if (blocksAreEmpty(secondBlocks)) {
+                    System.out.println("TES BELOK ke 2");
                     return TURN_LEFT;
                 }
-            }
+            } 
+            else if (myCar.position.lane == 4) {
+                List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState);
+                if (blocksAreEmpty(thirdBlocks)) {
+                    System.out.println("TES BELOK ke 3");
+                    return TURN_LEFT;
+                }
+            } 
         }
-        // kalau di depan lawan usahain ke pinggir (harus empty)
+        // kalau di depan lawan usahain kepinggir (harus empty)
+        // bisa dipaksain lagi buat mastiin keluar dari range EMP lawan tapi ada minusnya juga mungkin didiskusiin nanti :(
         if (opponent.position.block < myCar.position.block) {
-            System.out.println("TES BELOK 2");
-            if (myCar.position.lane == 2) {
+            if (myCar.position.lane == 2 && opponent.position.lane != 4 ) {
                 List<Object> firstBlocks = getBlocksInFront(1, myCar.position.block, gameState);
-                if (!(firstBlocks.contains(Terrain.MUD) || firstBlocks.contains(Terrain.WALL)
-                        || firstBlocks.contains(Terrain.OIL_SPILL))) {
+                if (blocksAreEmpty(firstBlocks)) {
+                    System.out.println("TES BELOK ke 1");
                     return TURN_LEFT;
                 }
-            } else if (myCar.position.lane == 3) {
+            } else if (myCar.position.lane == 3 && opponent.position.lane != 1) {
                 List<Object> fourthBlocks = getBlocksInFront(4, myCar.position.block, gameState);
-                if (!(fourthBlocks.contains(Terrain.MUD) || fourthBlocks.contains(Terrain.WALL)
-                        || fourthBlocks.contains(Terrain.OIL_SPILL))) {
+                if (blocksAreEmpty(fourthBlocks)) {
+                    System.out.println("TES BELOK ke 4");
                     return TURN_RIGHT;
                 }
             }
         }
-        
-
 
         System.out.println("HADEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
 
-        
         return ACCELERATE;
     }
 
@@ -195,6 +227,10 @@ public class Bot {
             }
         }
         return false;
+    }
+
+    private Boolean blocksAreEmpty(List<Object> blocks) {
+        return !(blocks.contains(Terrain.MUD) || blocks.contains(Terrain.WALL) || blocks.contains(Terrain.OIL_SPILL));
     }
 
     /**
