@@ -34,31 +34,29 @@ public class Bot {
         directionList.add(TURN_RIGHT);
     }
 
-    // RUN SELALU RETURN COMMANDDDD
     public Command run(GameState gameState) {
-        System.out.println("HAHHSHAHHAHHAHHAHAHHAHAHAHHAHAHHAHAHHAHAHA");
         Car myCar = gameState.player;
         Car opponent = gameState.opponent;
 
-        // Basic fix logic
+        //Basic fix logic
         List<Object> blocks = getBlocksInFront(myCar.position.lane, myCar.position.block, gameState);
-        List<Object> nextBlocks = blocks.subList(0, 1);
+        List<Object> nextBlocks = blocks.subList(0,1);
 
-        // Fix first if too damaged to move
-        if (myCar.damage == 5) {
+        //Fix first if too damaged to move
+        if(myCar.damage == 5) {
             return FIX;
         }
-        // Accelerate first if going to slow
-        if (myCar.speed <= 3) {
+        //Accelerate first if going to slow
+        if(myCar.speed <= 3) {
             return ACCELERATE;
         }
 
-        // Basic fix logic
-        if (myCar.damage >= 5) {
+        //Basic fix logic
+        if(myCar.damage >= 5) {
             return FIX;
         }
 
-        // Basic avoidance logic
+        //Basic avoidance logic
         if (blocks.contains(Terrain.MUD) || nextBlocks.contains(Terrain.WALL)) {
             if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
                 return LIZARD;
@@ -69,12 +67,12 @@ public class Bot {
             }
         }
 
-        // Basic improvement logic
+        //Basic improvement logic
         if (hasPowerUp(PowerUps.BOOST, myCar.powerups)) {
             return BOOST;
         }
 
-        // Basic aggression logic
+        //Basic aggression logic
         if (myCar.speed == maxSpeed) {
             if (hasPowerUp(PowerUps.OIL, myCar.powerups)) {
                 return OIL;
@@ -88,7 +86,7 @@ public class Bot {
     }
 
     private Boolean hasPowerUp(PowerUps powerUpToCheck, PowerUps[] available) {
-        for (PowerUps powerUp : available) {
+        for (PowerUps powerUp: available) {
             if (powerUp.equals(powerUpToCheck)) {
                 return true;
             }
