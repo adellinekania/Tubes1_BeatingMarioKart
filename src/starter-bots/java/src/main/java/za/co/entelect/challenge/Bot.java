@@ -43,17 +43,8 @@ public class Bot {
         List<Object> blocks = getBlocksInFront(myCar.position.lane, myCar.position.block, gameState);
         List<Object> nextBlocks = blocks.subList(0, 1);
 
-        // Fix first if too damaged to move
-        if (myCar.damage == 5) {
-            return FIX;
-        }
-        // Accelerate first if going to slow
-        if (myCar.speed <= 3) {
-            return ACCELERATE;
-        }
-
-        // Basic fix logic
-        if (myCar.damage >= 5) {
+        // PUNYA AFAN: #1 FIX
+        if (myCar.damage >= 2) {
             return FIX;
         }
 
@@ -99,6 +90,104 @@ public class Bot {
             }
         }
 
+        // PUNYA AFAN: #3 ACCELERATE
+        if (myCar.speed <= 3) {
+            return ACCELERATE;
+        }
+        
+        // PUNYA AFAN: #4 Ngambil Powerups
+        if (countPowerUp(PowerUps.LIZARD, myCar.powerups) < 5) {
+            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.LIZARD)) {
+                System.out.println("FORWARD_LIZARD");
+                return ACCELERATE;
+            } else if (myCar.position.lane > 1) {
+                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane-1, myCar.position.block, gameState);
+                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.LIZARD)) {
+                System.out.println("LEFT_LIZARD");
+                return TURN_LEFT;
+                }
+            } else if (myCar.position.lane < 4) {
+                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane+1, myCar.position.block, gameState);
+                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.LIZARD)) {
+                System.out.println("RIGHT_LIZARD");
+                    return TURN_RIGHT;
+                }
+            }
+        } else if (countPowerUp(PowerUps.EMP, myCar.powerups) < 3) {
+            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.EMP)) {
+                System.out.println("FORWARD_EMP");
+                return ACCELERATE;
+            } else if (myCar.position.lane > 1) {
+                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane-1, myCar.position.block, gameState);
+                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.EMP)) {
+                System.out.println("LEFT_EMP");
+                return TURN_LEFT;
+                }
+            } else if (myCar.position.lane < 4) {
+                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane+1, myCar.position.block, gameState);
+                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.EMP)) {
+                System.out.println("RIGHT_EMP");
+                return TURN_RIGHT;
+                }
+            }
+        } else if (countPowerUp(PowerUps.TWEET, myCar.powerups) < 3) {
+            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.TWEET)) {
+                System.out.println("FORWARD_TWEET");
+                return ACCELERATE;
+            } else if (myCar.position.lane > 1) {
+                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane-1, myCar.position.block, gameState);
+                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.TWEET)) {
+                System.out.println("LEFT_TWEET");
+                return TURN_LEFT;
+                }
+            } else if (myCar.position.lane < 4) {
+                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane+1, myCar.position.block, gameState);
+                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.TWEET)) {
+                System.out.println("RIGHT_TWEET");
+                return TURN_RIGHT;
+                }
+            }
+        } else if (countPowerUp(PowerUps.BOOST, myCar.powerups) < 3) {
+            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.BOOST)) {
+                System.out.println("FORWARD_BOOST");
+                return ACCELERATE;
+            } else if (myCar.position.lane > 1) {
+                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane-1, myCar.position.block, gameState);
+                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.BOOST)) {
+                System.out.println("LEFT_BOOST");
+                return TURN_LEFT;
+                }
+            } else if (myCar.position.lane < 4) {
+                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane+1, myCar.position.block, gameState);
+                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.BOOST)) {
+                System.out.println("RIGHT_BOOST");
+                return TURN_RIGHT;
+                }
+            }
+        } else if (countPowerUp(PowerUps.OIL, myCar.powerups) < 3) {
+            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.OIL_POWER)) {
+                System.out.println("FORWARD_OIL");
+                return ACCELERATE;
+            } else if (myCar.position.lane > 1) {
+                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane-1, myCar.position.block, gameState);
+                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.OIL_POWER)) {
+                System.out.println("LEFT_OIL");
+                return TURN_LEFT;
+                }
+            } else if (myCar.position.lane < 4) {
+                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane+1, myCar.position.block, gameState);
+                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.OIL_POWER)) {
+                System.out.println("RIGHT_OIL");
+                return TURN_RIGHT;
+                }
+            }
+        }
+
+
+        // PUNYA AFAN: #5 ACCELERATE
+        if (myCar.speed <= 6) {
+            return ACCELERATE;
+        }
 
         // PUNYA ADELLL : POWERUPSS
         // EMP
@@ -227,6 +316,17 @@ public class Bot {
             }
         }
         return false;
+    }
+
+    // Count how many powerup car has
+    private int countPowerUp(PowerUps powerUpToCheck, PowerUps[] available) {
+        int counter = 0;
+        for (PowerUps powerUp : available) {
+            if (powerUp.equals(powerUpToCheck)) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
     private Boolean blocksAreEmpty(List<Object> blocks) {
