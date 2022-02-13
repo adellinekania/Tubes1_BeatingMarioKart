@@ -27,6 +27,9 @@ public class Bot {
 
     private final static Command TURN_RIGHT = new ChangeLaneCommand(1);
     private final static Command TURN_LEFT = new ChangeLaneCommand(-1);
+    
+    // Command placeholder only
+    private final static Command NOTHING = new DoNothingCommand();
 
     public Bot() {
         this.random = new SecureRandom();
@@ -47,7 +50,12 @@ public class Bot {
             return FIX;
         }
 
-        // PUNYA LIZA: NGINDARIN OBSTACLE
+        // PUNYA AFAN: #2 ACCELERATE
+        if (myCar.speed <= 3) {
+            return ACCELERATE;
+        }
+
+        // PUNYA LIZA: #3 NGINDARIN OBSTACLE
         if (!blocksAreEmpty(blocks)) {
             if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
                 System.out.println("TES NGEHINDAR make liza(rd)");
@@ -89,106 +97,31 @@ public class Bot {
             }
         }
 
-        // PUNYA AFAN: #3 ACCELERATE
-        if (myCar.speed <= 3) {
-            return ACCELERATE;
-        }
-
         // PUNYA AFAN: #4 Ngambil Powerups
         if (countPowerUp(PowerUps.LIZARD, myCar.powerups) < 5) {
-            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.LIZARD)) {
-                System.out.println("FORWARD_LIZARD");
-                return ACCELERATE;
-            } else if (myCar.position.lane > 1) {
-                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.LIZARD)) {
-                    System.out.println("LEFT_LIZARD");
-                    return TURN_LEFT;
-                }
-            } else if (myCar.position.lane < 4) {
-                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.LIZARD)) {
-                    System.out.println("RIGHT_LIZARD");
-                    return TURN_RIGHT;
-                }
+            Command powaction = TakePowerUp(Terrain.LIZARD, PowerUps.LIZARD, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            if (powaction != NOTHING) {
+                return powaction;
             }
         } else if (countPowerUp(PowerUps.EMP, myCar.powerups) < 3) {
-            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.EMP)) {
-                System.out.println("FORWARD_EMP");
-                return ACCELERATE;
-            } else if (myCar.position.lane > 1) {
-                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.EMP)) {
-                    System.out.println("LEFT_EMP");
-                    return TURN_LEFT;
-                }
-            } else if (myCar.position.lane < 4) {
-                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.EMP)) {
-                    System.out.println("RIGHT_EMP");
-                    return TURN_RIGHT;
-                }
+            Command powaction = TakePowerUp(Terrain.EMP, PowerUps.EMP, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            if (powaction != NOTHING) {
+                return powaction;
             }
         } else if (countPowerUp(PowerUps.TWEET, myCar.powerups) < 3) {
-            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.TWEET)) {
-                System.out.println("FORWARD_TWEET");
-                return ACCELERATE;
-            } else if (myCar.position.lane > 1) {
-                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.TWEET)) {
-                    System.out.println("LEFT_TWEET");
-                    return TURN_LEFT;
-                }
-            } else if (myCar.position.lane < 4) {
-                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.TWEET)) {
-                    System.out.println("RIGHT_TWEET");
-                    return TURN_RIGHT;
-                }
+            Command powaction = TakePowerUp(Terrain.TWEET, PowerUps.TWEET, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            if (powaction != NOTHING) {
+                return powaction;
             }
         } else if (countPowerUp(PowerUps.BOOST, myCar.powerups) < 3) {
-            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.BOOST)) {
-                System.out.println("FORWARD_BOOST");
-                return ACCELERATE;
-            } else if (myCar.position.lane > 1) {
-                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.BOOST)) {
-                    System.out.println("LEFT_BOOST");
-                    return TURN_LEFT;
-                }
-            } else if (myCar.position.lane < 4) {
-                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.BOOST)) {
-                    System.out.println("RIGHT_BOOST");
-                    return TURN_RIGHT;
-                }
+            Command powaction = TakePowerUp(Terrain.BOOST, PowerUps.BOOST, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            if (powaction != NOTHING) {
+                return powaction;
             }
         } else if (countPowerUp(PowerUps.OIL, myCar.powerups) < 3) {
-            if (blocksAreEmpty(blocks) && blocks.contains(Terrain.OIL_POWER)) {
-                System.out.println("FORWARD_OIL");
-                return ACCELERATE;
-            } else if (myCar.position.lane > 1) {
-                List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(Terrain.OIL_POWER)) {
-                    System.out.println("LEFT_OIL");
-                    return TURN_LEFT;
-                }
-            } else if (myCar.position.lane < 4) {
-                List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block, gameState,
-                        myCar.speed - 1);
-                if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(Terrain.OIL_POWER)) {
-                    System.out.println("RIGHT_OIL");
-                    return TURN_RIGHT;
-                }
+            Command powaction = TakePowerUp(Terrain.OIL_POWER, PowerUps.OIL, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            if (powaction != NOTHING) {
+                return powaction;
             }
         }
 
@@ -228,7 +161,7 @@ public class Bot {
         // BOOST
         if (hasPowerUp(PowerUps.BOOST, myCar.powerups)) {
             if (myCar.damage == 0) {
-                if (blocksAreEmpty(getBlocksInFront(myCar.position.lane - 1, myCar.position.block,
+                if (blocksAreEmpty(getBlocksInFront(myCar.position.lane, myCar.position.block,
                         gameState, 15))) {
                     return BOOST;
                 } else {
@@ -316,6 +249,26 @@ public class Bot {
         System.out.println("HADEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
 
         return ACCELERATE;
+    }
+    
+    // General Function to return action for taking power up
+    private Command TakePowerUp(Terrain terrain, PowerUps powerup, List<Object> blocks, int lane, int block, GameState gameState, int speed) {
+        if (blocksAreEmpty(blocks) && blocks.contains(terrain)) {
+            System.out.println("POWERUP_FORWARD_"+powerup);
+            return ACCELERATE;
+        } else if (lane > 1) {
+            List<Object> leftBlocks = getBlocksInFront(lane - 1, block, gameState, speed - 1);
+            if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(terrain)) {
+                System.out.println("POWERUP_LEFT_"+powerup);
+                return TURN_LEFT;
+            } else {return NOTHING;}
+        } else if (lane < 4) {
+            List<Object> rightBlocks = getBlocksInFront(lane + 1, block, gameState, speed - 1);
+            if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(terrain)) {
+                System.out.println("POWERUP_RIGHT_"+powerup);
+                return TURN_RIGHT;
+            } else {return NOTHING;}
+        } else {return NOTHING;}
     }
 
     private Boolean hasPowerUp(PowerUps powerUpToCheck, PowerUps[] available) {
