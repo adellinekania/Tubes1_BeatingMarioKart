@@ -107,14 +107,14 @@ public class Bot {
             if (powaction != NOTHING) {
                 return powaction;
             }
-        } else if (countPowerUp(PowerUps.EMP, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.EMP, PowerUps.EMP, blocks, myCar.position.lane,
+        } else if (countPowerUp(PowerUps.TWEET, myCar.powerups) < 3) {
+            Command powaction = TakePowerUp(Terrain.TWEET, PowerUps.TWEET, blocks, myCar.position.lane,
                     myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
-        } else if (countPowerUp(PowerUps.TWEET, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.TWEET, PowerUps.TWEET, blocks, myCar.position.lane,
+        } else if (countPowerUp(PowerUps.EMP, myCar.powerups) < 3) {
+            Command powaction = TakePowerUp(Terrain.EMP, PowerUps.EMP, blocks, myCar.position.lane,
                     myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
