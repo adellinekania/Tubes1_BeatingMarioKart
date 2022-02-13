@@ -45,7 +45,7 @@ public class Bot {
         List<Object> nextBlocks = blocks.subList(0, 1);
 
         // TES ADA CYBERTRUCK ATAU ENGGA
-        System.out.println("ADA CYBERTRUCK?: " + checkCyberTruck(myCar.position.lane, myCar.position.block, gameState, myCar.speed));
+        // system.out.println("ADA CYBERTRUCK?: " + checkCyberTruck(myCar.position.lane, myCar.position.block, gameState, myCar.speed));
 
         // PUNYA AFAN: #1 FIX
         if (myCar.damage >= 2) {
@@ -60,33 +60,33 @@ public class Bot {
         // PUNYA LIZA: #3 NGINDARIN OBSTACLE
         if (!blocksAreEmpty(myCar.position.lane, myCar.position.block, gameState, myCar.speed)) {
             if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
-                System.out.println("TES NGEHINDAR make liza(rd)");
+                // system.out.println("TES NGEHINDAR make liza(rd)");
                 return LIZARD;
             } else {
                 if (myCar.position.lane == 1) {
                     if (blocksAreEmpty(2, myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke 2");
+                        // system.out.println("TES NGEHINDAR ke 2");
                         return TURN_RIGHT;
                     }
                 } else if (myCar.position.lane == 4) {
                     if (blocksAreEmpty(3,  myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke 3");
+                        // system.out.println("TES NGEHINDAR ke 3");
                         return TURN_LEFT;
                     }
                 } else if (myCar.position.lane == 2) {
                     if (blocksAreEmpty(1, myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke kiri");
+                        // system.out.println("TES NGEHINDAR ke kiri");
                         return TURN_LEFT;
                     } else if (blocksAreEmpty(3, myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke kanan");
+                        // system.out.println("TES NGEHINDAR ke kanan");
                         return TURN_RIGHT;
                     }
                 } else if (myCar.position.lane == 3) {
                     if (blocksAreEmpty(4, myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke kanan");
+                        // system.out.println("TES NGEHINDAR ke kanan");
                         return TURN_RIGHT;
                     } else if (blocksAreEmpty(2, myCar.position.block, gameState, myCar.speed-1)) {
-                        System.out.println("TES NGEHINDAR ke kiri");
+                        // system.out.println("TES NGEHINDAR ke kiri");
                         return TURN_LEFT;
                     }
                 }
@@ -177,22 +177,22 @@ public class Bot {
         if (opponent.position.block > myCar.position.block) {
             if (myCar.position.lane == 1) {
                 if (blocksAreEmpty(2, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 2");
+                    // system.out.println("TES BELOK ke 2");
                     return TURN_RIGHT;
                 }
             } else if (myCar.position.lane == 2 && opponent.position.lane == 4) {
                 if (blocksAreEmpty(3, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 3");
+                    // system.out.println("TES BELOK ke 3");
                     return TURN_RIGHT;
                 }
             } else if (myCar.position.lane == 3 && opponent.position.lane == 1) {
                 if (blocksAreEmpty(2, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 2");
+                    // system.out.println("TES BELOK ke 2");
                     return TURN_LEFT;
                 }
             } else if (myCar.position.lane == 4) {
                 if (blocksAreEmpty(3, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 3");
+                    // system.out.println("TES BELOK ke 3");
                     return TURN_LEFT;
                 }
             }
@@ -201,18 +201,18 @@ public class Bot {
         if (opponent.position.block < myCar.position.block) {
             if (myCar.position.lane == 2 && opponent.position.lane != 4) {
                 if (blocksAreEmpty(1, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 1");
+                    // system.out.println("TES BELOK ke 1");
                     return TURN_LEFT;
                 }
             } else if (myCar.position.lane == 3 && opponent.position.lane != 1) {
                 if (blocksAreEmpty(4, myCar.position.block, gameState, myCar.speed-1)) {
-                    System.out.println("TES BELOK ke 4");
+                    // system.out.println("TES BELOK ke 4");
                     return TURN_RIGHT;
                 }
             }
         }
 
-        System.out.println("HADEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+        // system.out.println("HADEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
 
         return ACCELERATE;
     }
@@ -222,12 +222,12 @@ public class Bot {
             GameState gameState, int speed) {
         List<Object> blocks = getBlocksInFront(lane, block, gameState, speed);
         if (blocksAreEmpty(lane, block, gameState, speed) && blocks.contains(terrain)) {
-            System.out.println("POWERUP_FORWARD_" + powerup);
+            // system.out.println("POWERUP_FORWARD_" + powerup);
             return ACCELERATE;
         } else if (lane > 1) {
             List<Object> leftBlocks = getBlocksInFront(lane - 1, block, gameState, speed - 1);
             if (blocksAreEmpty(lane-1, block, gameState, speed-1) && leftBlocks.contains(terrain)) {
-                System.out.println("POWERUP_LEFT_" + powerup);
+                // system.out.println("POWERUP_LEFT_" + powerup);
                 return TURN_LEFT;
             } else {
                 return NOTHING;
@@ -235,7 +235,7 @@ public class Bot {
         } else if (lane < 4) {
             List<Object> rightBlocks = getBlocksInFront(lane + 1, block, gameState, speed - 1);
             if (blocksAreEmpty(lane+1, block, gameState, speed-1) && rightBlocks.contains(terrain)) {
-                System.out.println("POWERUP_RIGHT_" + powerup);
+                // system.out.println("POWERUP_RIGHT_" + powerup);
                 return TURN_RIGHT;
             } else {
                 return NOTHING;
