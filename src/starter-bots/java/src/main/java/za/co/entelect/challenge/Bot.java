@@ -45,6 +45,9 @@ public class Bot {
         List<Object> blocks = getBlocksInFront(myCar.position.lane, myCar.position.block, gameState, myCar.speed);
         List<Object> nextBlocks = blocks.subList(0, 1);
 
+        // TES ADA CYBERTRUCK ATAU ENGGA
+        System.out.println("ADA CYBERTRUCK?: " + checkCyberTruck(myCar.position.lane, myCar.position.block, gameState, myCar.speed));
+
         // PUNYA AFAN: #1 FIX
         if (myCar.damage >= 2) {
             return FIX;
@@ -319,6 +322,25 @@ public class Bot {
 
         }
         return blocks;
+    }
+
+    private boolean checkCyberTruck(int lane, int block, GameState gameState, int maxLane) {
+        List<Lane[]> map = gameState.lanes;
+        int startBlock = map.get(0)[0].position.block;
+        boolean check = false;
+
+        Lane[] laneList = map.get(lane - 1);
+        for (int i = max(block - startBlock, 0); i <= block - startBlock + maxLane; i++) {
+            if (laneList[i] == null || laneList[i].terrain == Terrain.FINISH) {
+                break;
+            }
+
+            if (laneList[i].cyberTruck) {
+                check = true;
+            }
+
+        }
+        return check;
     }
 
 }
