@@ -164,33 +164,38 @@ public class Bot {
                 if (blocksAreEmpty(getBlocksInFront(myCar.position.lane, myCar.position.block,
                         gameState, 15))) {
                     return BOOST;
-                } else {
-                    if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
-                        return BOOST;
-                    } else {
-                        if (myCar.position.lane == 2 || myCar.position.lane == 3) {
-                            List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1, myCar.position.block,
-                                    gameState, 14);
-                            List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1, myCar.position.block,
-                                    gameState, 14);
-                            if (blocksAreEmpty(leftBlocks) || (blocksAreEmpty(rightBlocks))) {
-                                return BOOST;
-                            }
-                        } else if (myCar.position.lane == 1) {
-                            List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block, gameState,
-                                    14);
-                            if (blocksAreEmpty(secondBlocks)) {
-                                return BOOST;
-                            }
-                        } else if (myCar.position.lane == 4) {
-                            List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block, gameState,
-                                    14);
-                            if (blocksAreEmpty(thirdBlocks)) {
-                                return BOOST;
-                            }
-                        }
-                    }
                 }
+                // else {
+                // if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
+                // return BOOST;
+                // } else {
+                // if (myCar.position.lane == 2 || myCar.position.lane == 3) {
+                // List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1,
+                // myCar.position.block,
+                // gameState, 14);
+                // List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1,
+                // myCar.position.block,
+                // gameState, 14);
+                // if (blocksAreEmpty(leftBlocks) || (blocksAreEmpty(rightBlocks))) {
+                // return BOOST;
+                // }
+                // } else if (myCar.position.lane == 1) {
+                // List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block,
+                // gameState,
+                // 14);
+                // if (blocksAreEmpty(secondBlocks)) {
+                // return BOOST;
+                // }
+                // } else if (myCar.position.lane == 4) {
+                // List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block,
+                // gameState,
+                // 14);
+                // if (blocksAreEmpty(thirdBlocks)) {
+                // return BOOST;
+                // }
+                // }
+                // }
+                // }
             }
         }
 
