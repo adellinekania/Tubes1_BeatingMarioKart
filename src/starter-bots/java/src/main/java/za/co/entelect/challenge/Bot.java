@@ -13,7 +13,6 @@ import java.security.SecureRandom;
 
 public class Bot {
 
-    private static final int maxSpeed = 9;
     private List<Command> directionList = new ArrayList<>();
     private int countTweet = 0;
 
