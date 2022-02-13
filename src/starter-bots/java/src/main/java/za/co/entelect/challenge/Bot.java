@@ -27,7 +27,7 @@ public class Bot {
 
     private final static Command TURN_RIGHT = new ChangeLaneCommand(1);
     private final static Command TURN_LEFT = new ChangeLaneCommand(-1);
-    
+
     // Command placeholder only
     private final static Command NOTHING = new DoNothingCommand();
 
@@ -102,27 +102,32 @@ public class Bot {
 
         // PUNYA AFAN: #4 Ngambil Powerups
         if (countPowerUp(PowerUps.LIZARD, myCar.powerups) < 5) {
-            Command powaction = TakePowerUp(Terrain.LIZARD, PowerUps.LIZARD, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            Command powaction = TakePowerUp(Terrain.LIZARD, PowerUps.LIZARD, blocks, myCar.position.lane,
+                    myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
         } else if (countPowerUp(PowerUps.EMP, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.EMP, PowerUps.EMP, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            Command powaction = TakePowerUp(Terrain.EMP, PowerUps.EMP, blocks, myCar.position.lane,
+                    myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
         } else if (countPowerUp(PowerUps.TWEET, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.TWEET, PowerUps.TWEET, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            Command powaction = TakePowerUp(Terrain.TWEET, PowerUps.TWEET, blocks, myCar.position.lane,
+                    myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
         } else if (countPowerUp(PowerUps.BOOST, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.BOOST, PowerUps.BOOST, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            Command powaction = TakePowerUp(Terrain.BOOST, PowerUps.BOOST, blocks, myCar.position.lane,
+                    myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
         } else if (countPowerUp(PowerUps.OIL, myCar.powerups) < 3) {
-            Command powaction = TakePowerUp(Terrain.OIL_POWER, PowerUps.OIL, blocks, myCar.position.lane, myCar.position.block, gameState, myCar.speed);
+            Command powaction = TakePowerUp(Terrain.OIL_POWER, PowerUps.OIL, blocks, myCar.position.lane,
+                    myCar.position.block, gameState, myCar.speed);
             if (powaction != NOTHING) {
                 return powaction;
             }
@@ -134,19 +139,7 @@ public class Bot {
         }
 
         // PUNYA ADELLL : POWERUPSS
-        // EMP
-        if (hasPowerUp(PowerUps.EMP, myCar.powerups)) {
-            if (opponent.speed > 5) {
-                if (opponent.position.block > myCar.position.block) {
-                    int yOp = opponent.position.lane;
-                    int yMy = myCar.position.lane;
-                    if (yMy == yOp || yMy == yOp + 1 || yMy == yOp - 1) {
-                        return EMP;
-                    }
-                }
-            }
-        }
-
+        // TWEET
         if (hasPowerUp(PowerUps.TWEET, myCar.powerups)) {
             if (opponent.speed > 5) {
                 if (countTweet == 0) {
@@ -160,6 +153,18 @@ public class Bot {
                 }
             }
         }
+        // EMP
+        if (hasPowerUp(PowerUps.EMP, myCar.powerups)) {
+            if (opponent.speed > 5) {
+                if (opponent.position.block > myCar.position.block) {
+                    int yOp = opponent.position.lane;
+                    int yMy = myCar.position.lane;
+                    if (yMy == yOp || yMy == yOp + 1 || yMy == yOp - 1) {
+                        return EMP;
+                    }
+                }
+            }
+        }
 
         // BOOST
         if (hasPowerUp(PowerUps.BOOST, myCar.powerups)) {
@@ -168,37 +173,6 @@ public class Bot {
                         gameState, 15))) {
                     return BOOST;
                 }
-                // else {
-                // if (hasPowerUp(PowerUps.LIZARD, myCar.powerups)) {
-                // return BOOST;
-                // } else {
-                // if (myCar.position.lane == 2 || myCar.position.lane == 3) {
-                // List<Object> leftBlocks = getBlocksInFront(myCar.position.lane - 1,
-                // myCar.position.block,
-                // gameState, 14);
-                // List<Object> rightBlocks = getBlocksInFront(myCar.position.lane + 1,
-                // myCar.position.block,
-                // gameState, 14);
-                // if (blocksAreEmpty(leftBlocks) || (blocksAreEmpty(rightBlocks))) {
-                // return BOOST;
-                // }
-                // } else if (myCar.position.lane == 1) {
-                // List<Object> secondBlocks = getBlocksInFront(2, myCar.position.block,
-                // gameState,
-                // 14);
-                // if (blocksAreEmpty(secondBlocks)) {
-                // return BOOST;
-                // }
-                // } else if (myCar.position.lane == 4) {
-                // List<Object> thirdBlocks = getBlocksInFront(3, myCar.position.block,
-                // gameState,
-                // 14);
-                // if (blocksAreEmpty(thirdBlocks)) {
-                // return BOOST;
-                // }
-                // }
-                // }
-                // }
             }
         }
 
@@ -258,25 +232,32 @@ public class Bot {
 
         return ACCELERATE;
     }
-    
+
     // General Function to return action for taking power up
-    private Command TakePowerUp(Terrain terrain, PowerUps powerup, List<Object> blocks, int lane, int block, GameState gameState, int speed) {
+    private Command TakePowerUp(Terrain terrain, PowerUps powerup, List<Object> blocks, int lane, int block,
+            GameState gameState, int speed) {
         if (blocksAreEmpty(blocks) && blocks.contains(terrain)) {
-            System.out.println("POWERUP_FORWARD_"+powerup);
+            System.out.println("POWERUP_FORWARD_" + powerup);
             return ACCELERATE;
         } else if (lane > 1) {
             List<Object> leftBlocks = getBlocksInFront(lane - 1, block, gameState, speed - 1);
             if (blocksAreEmpty(leftBlocks) && leftBlocks.contains(terrain)) {
-                System.out.println("POWERUP_LEFT_"+powerup);
+                System.out.println("POWERUP_LEFT_" + powerup);
                 return TURN_LEFT;
-            } else {return NOTHING;}
+            } else {
+                return NOTHING;
+            }
         } else if (lane < 4) {
             List<Object> rightBlocks = getBlocksInFront(lane + 1, block, gameState, speed - 1);
             if (blocksAreEmpty(rightBlocks) && rightBlocks.contains(terrain)) {
-                System.out.println("POWERUP_RIGHT_"+powerup);
+                System.out.println("POWERUP_RIGHT_" + powerup);
                 return TURN_RIGHT;
-            } else {return NOTHING;}
-        } else {return NOTHING;}
+            } else {
+                return NOTHING;
+            }
+        } else {
+            return NOTHING;
+        }
     }
 
     private Boolean hasPowerUp(PowerUps powerUpToCheck, PowerUps[] available) {
