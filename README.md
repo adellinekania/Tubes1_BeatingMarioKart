@@ -14,7 +14,7 @@ Overdrive is a racing game which compete 2 car bots. To win the match, each play
 
 ## Greedy Strategies
 The following is the strategy that we used after considering the actions that need to be prioritized based on the conditions that the car may face in a round.
-1. Fix the car if damage ≤ 2
+1. Fix the car if damage ≥ 2
 2. Accelerate the car if speed ≤ 3
 3. Avoid obstacle if possible (using LIZARD or turn to the other empty lane)
 4. Take powerups in the next possible blocks, if we don't have enough (minimum 5 for LIZARD and minimum 3 for others)
@@ -32,7 +32,6 @@ If we are ahead, turn to the 1st or 4th lane, to avoid opponent's EMP range
 
 ## Requirement
 - [Java 8 (minimum)](https://www.oracle.com/java/technologies/downloads/#java8)
-
 - [IntelliJ  IDEA](https://www.jetbrains.com/idea/)
 - [NodeJs](https://nodejs.org/en/download/)
 - [Visual Studio Code (optional if you don't want to use IntelliJ)](https://code.visualstudio.com/)
