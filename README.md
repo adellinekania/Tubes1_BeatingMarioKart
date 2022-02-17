@@ -37,40 +37,35 @@ If we are ahead, turn to the 1st or 4th lane, to avoid opponent's EMP range
 - [Visual Studio Code (optional if you don't want to use IntelliJ)](https://code.visualstudio.com/)
 - [Maven](https://maven.apache.org/)
 
-To set up Maven in VS Code, you can follow [this instuction](https://code.visualstudio.com/docs/java/java-build).
+To set up Maven in IntelliJ IDEA, you you can follow [this instruction](https://www.jetbrains.com/help/idea/convert-a-regular-project-into-a-maven-project.html#develop_with_maven). <br />
+To set up Maven in Visual Studio Code, you can follow [this instruction](https://code.visualstudio.com/docs/java/java-build).
 
 ## Dependencies
-To implements this bot, first you need to download and extract the latest release [starter-pack.zip](https://github.com/EntelectChallenge/2020-Overdrive/releases/tag/2020.3.4) as the game engine.
+To implements this bot,
+- Download and extract the latest release [starter-pack.zip](https://github.com/EntelectChallenge/2020-Overdrive/releases/tag/2020.3.4) as the game engine.
 
 ## How To Build
-- Clone this repository
-    ```
-    git clone https://github.com/adellinekania/Tubes1_BeatingMarioKart.git
-    ```
-Using Visual Studio Code:
-- Copy the ```src``` folder in this repository to replace the ```src``` folder in ```starter-pack > starter-bots > java```
-- You can rename the player for this bot in ```bot.json```, for example
-    ```
-    "nickName": "Beating MARIOO KARTTTTT",
-    ```
-- Edit the used bot in ```game-runner-config.json```
+First, clone this repository
+```
+git clone https://github.com/adellinekania/Tubes1_BeatingMarioKart.git
+```
+If you want to make any changes and re-compile this bot, you can do these following steps:
+- Open this project in IntelliJ or VS Code
+- To compile, go to the maven project tab, ```src > Lifecycle``` then click the play button on ```install```
+
+To use this bot in the game engine:
+- Copy the ```src``` folder in this project to ```starter-pack > starter-bots``` and rename it as "```java```" to replace the initial java folder there.
+- Edit the used bot in game-runner-config.json
     ```
     "player-a": "./starter-bots/java"
     ```
-- To compile, go to the maven project, ```java-starter-bot > Lifecycle``` then click the play button on ```install```
-
-Using IntelliJ:
-
-
 
 ## How To Run
-After you re-compile this bot within the program in starter-pack,
 - If you are using Windows, simply double click the ```run.bat```
-- If you are using Linux/Mac, run
+- If you are using Linux/Mac, run the command
     ```
     make run
     ```
-    in the right directory
 
 ## Authors
 

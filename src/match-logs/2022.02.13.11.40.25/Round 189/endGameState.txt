@@ -1,6 +1,0 @@
-Match seed: 11489
-
-The winner is: A - Beating MARIOO KARTTTTT
-
-A - Beating MARIOO KARTTTTT - score:368 health:0
-B - CoffeeRef - score:-60 health:0
