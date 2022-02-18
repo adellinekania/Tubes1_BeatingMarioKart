@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [General Information](#general-information)
-- [Greedy Strategies](https://maven.apache.org/)
+- [Greedy Strategy](#greedy-strategy)
 - [Requirements](#requirement)
 - [Depedencies](#depedencies)
 - [How To Build](#how-to-build)
@@ -12,7 +12,7 @@
 ## General Information
 Overdrive is a racing game which compete 2 car bots. To win the match, each player must apply a certain strategy to be able to beat their opponent. This program builds a bot using the Greedy Algorithm, a strategy to optimize the condition of the car in each round that expect the car will win at the end.
 
-## Greedy Strategies
+## Greedy Strategy
 The following is the strategy that we used after considering the actions that need to be prioritized based on the conditions that the car may face in a round.
 1. Fix the car if damage ≥ 2
 2. Accelerate the car if speed ≤ 3
